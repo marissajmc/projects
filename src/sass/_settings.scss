@@ -1,0 +1,39 @@
+// Import foundation functions
+@import "foundation/functions";
+
+// Don't include html classes to stop css bloat
+$include-html-classes: false;
+
+// Include these classes
+$include-html-grid-classes: true;
+$include-html-type-classes: true;
+$include-html-block-grid-classes: true;
+
+// Colors
+$body-font-color: #444;	
+$primary-color: #dd295c;
+
+// Fonts
+$base-font-size: 16;
+$h1-font-size: rem-calc(60);
+$h2-font-size: rem-calc(40);
+$h3-font-size: rem-calc(30);
+$h4-font-size: rem-calc(20);
+$h5-font-size: rem-calc(15);
+
+// Heading reduction for small screens (subtracted from default h1 sizes)
+$h1-font-reduction: rem-calc(20) !default;
+$h2-font-reduction: rem-calc(12) !default;
+$h3-font-reduction: rem-calc(10) !default;
+$h4-font-reduction: rem-calc(2) !default;
+$h5-font-reduction: rem-calc(1) !default;
+
+$paragraph-line-height: 1.3;
+$anchor-font-color-hover: $primary-color;
+
+// mediq query ranges
+$small-range: (0em, 40em);
+$medium-range: (40.063em, 63em);
+$large-range: (63.063em, 90em);
+$xlarge-range: (90.063em, 120em);
+$xxlarge-range: (120.063em, 99999999em);

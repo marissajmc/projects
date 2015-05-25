@@ -1,0 +1,20 @@
+{
+  "name": "projects",
+  "homepage": "http://mcookson.com",
+  "authors": [
+    "Marissa Cookson"
+  ],
+  "description": "Personal website to showcase projects I've designed, built and managed in my spare time",
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "foundation": "~5.4.4",
+    "modernizr": "~2.8.3",
+    "underscore": "~1.7.0"
+  }
+}

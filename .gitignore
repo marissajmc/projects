@@ -1,0 +1,18 @@
+# OSX
+.DS_Store
+
+# Node Package Manager
+node_modules
+
+# Bower Components
+src/vendor
+
+# Grunt
+.grunt
+
+# Sass
+.sass-cache
+*.map
+
+# Ignore merge conflict files
+*.orig

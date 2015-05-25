@@ -1,0 +1,17 @@
+/* -------------------------------
+   Typography
+------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+}
+
+body {
+	color: $body-font-color;
+}
+
+p {
+    margin: 1em 0;
+}
