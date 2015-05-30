@@ -2,16 +2,26 @@
    Typography
 ------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+h1,h2,h3,h4,h5,h6 {
+    -webkit-font-smoothing: antialiased;
+    display: block;
+}
+
+a {
+	text-decoration: none;
+    outline: none;  
+    &:visited {
+        color: inherit
+    }
+    &:hover {
+        color: $primary-color-hover;
+    }
+}
+
+.unstyled-list {
     margin: 0;
-    line-height: 1;
-}
-
-body {
-	color: $body-font-color;
-}
-
-p {
-    margin: 1em 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
 }

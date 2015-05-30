@@ -6,7 +6,6 @@
         _ = grunt.util._;
         var config = {
             options: {
-                sourceMap : true,
                 outputStyle : "compressed",
                 includePaths: ['src/vendor/foundation/scss']
             }

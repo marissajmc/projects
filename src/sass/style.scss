@@ -56,9 +56,12 @@
 /*==========  Custom Styles  ==========*/
 
 @import 
-	"partials/icons.scss",
 	"partials/mixin.scss",
+	"partials/icons.scss",
 	"partials/normalize.scss",
 	"partials/base.scss",
 	"partials/typography.scss",
-	"partials/layout.scss";
+	"partials/layout.scss",
+
+	"partials/components/filter.scss",
+	"partials/components/projects.scss";

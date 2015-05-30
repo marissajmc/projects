@@ -3,14 +3,46 @@
 ------------------------------- */
 
 @mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-     -moz-box-sizing: $box-model; // Firefox <= 19
-          box-sizing: $box-model;
+    -webkit-box-sizing: $box-model; // Safari <= 5
+    -moz-box-sizing: $box-model; // Firefox <= 19
+    box-sizing: $box-model;
+}
+
+@mixin mcicon($name, $position: before) {
+    &:#{$position} {
+        content: $name;
+        font-family: "mcicons";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        // margin
+        @if $position == before {
+            margin-right: rem-calc(8);
+            float: left;
+        }
+        // sizing
+        width: rem-calc(20);
+        text-align: center;
+        font-size: rem-calc(20);
+        @if ($name == $business) {
+            font-size: rem-calc(16);
+            padding-top: .13em;
+        }
+        @if ($name == $volunteer) {
+            font-size: rem-calc(21);
+        }
+        // mixin content block
+        @content;
+    }
 }
 
 @mixin clearfix() {
-    &:before,
-    &:after {
+    &:before, &:after {
         content: "";
         display: table;
     }

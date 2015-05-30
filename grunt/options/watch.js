@@ -7,8 +7,8 @@
                 files: "src/sass/**",
                 tasks : ["css"]
             },
-            img : {
-                files : "src/img/**",
+            image : {
+                files : "src/images/**",
                 tasks : ["image"]
             },
             js : {

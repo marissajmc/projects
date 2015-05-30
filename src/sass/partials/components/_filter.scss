@@ -1,0 +1,108 @@
+/* -------------------------------
+   Filter
+------------------------------- */
+.filter {
+	background: #000;
+	padding: rem-calc(10 15);
+	@include clearfix();
+	// margin-top: rem-calc(30);
+	// width: 50em;
+	// margin: 2em auto 0;
+	// border-radius: rem-calc(10);
+	@media #{$medium-up} {
+		// width: 100%;
+		// text-align: center;
+		// margin: auto;
+		// border: 1px solid #00cc00
+	}
+	border-radius: rem-calc(8);
+	margin: rem-calc(10);
+	color: #fff;
+}
+
+.filter__toggle {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	@include mcicon($plus, after){
+		float: right;
+		font-size: rem-calc(23);
+		position: relative;
+		top: -2px;
+	}
+	&:hover {
+		color: inherit
+	}
+	@media #{$medium-up} {
+		float: left;
+		width: auto;
+		&:after {
+			content: none
+		}
+	}
+	// animate open
+	&.is-open {
+		@include mcicon($minus, after){
+			float: right;
+			font-size: rem-calc(23);
+			position: relative;
+			top: -2px;
+		}
+		+ .filter__list {
+			height: rem-calc(151);
+			transition: height 0.2s ease-out;
+			@media #{$medium-up} {
+				height: auto
+			}
+		}
+	}
+}
+
+.filter__selected {
+	display: inline-block;
+	margin-left: rem-calc(10);
+	color: $primary-color;
+	&:before {
+		margin-right: rem-calc(7);
+		float: none;
+		position: relative;
+		top: 3px;
+	}
+	@media #{$medium-up} {
+		display: none;
+	}
+}
+
+.filter__list {
+	height: 0;
+	transition: height 0.15s ease-out;
+	overflow: hidden;
+	@media #{$medium-up} {
+		height: auto;
+		overflow: auto;
+	}
+
+}
+
+.filter__item {
+	padding-top: rem-calc(5);
+	padding-bottom: rem-calc(5);
+	clear: left;
+	@media #{$medium-up} {
+		padding: 0 1em;
+		float: left;
+		clear: none;
+	}
+}
+
+.filter__item__link {
+	color: #fff;
+	display: block;
+	&.is-active {
+		color: #555;
+		@media #{$medium-up} {
+			color: $primary-color;
+		}
+	}
+}

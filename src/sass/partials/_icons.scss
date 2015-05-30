@@ -1,3 +1,44 @@
 /* -------------------------------
    Icons 
 ------------------------------- */
+@charset "UTF-8";
+
+@font-face {
+  font-family: "mcicons";
+  src:url("fonts/mcicons.eot");
+  src:url("fonts/mcicons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/mcicons.woff") format("woff"),
+    url("fonts/mcicons.ttf") format("truetype"),
+    url("fonts/mcicons.svg#mcicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// map icon names to font unicode characters
+$stackoverflow: "\e000";
+$email: "\e001";
+$linkedin: "\e002";
+$github: "\e003";
+$all: "\e004";
+$plus: "\e005";
+$gamepad: "\e006";
+$volunteer: "\e007";
+$business: "\e008";
+$minus: "\e009";
+$at: "\e00a";
+
+.icon--all {
+    @include mcicon($all);
+}
+.icon--volunteer {
+    @include mcicon($volunteer);
+}
+.icon--business {
+    @include mcicon($business);
+}
+.icon--edm {
+    @include mcicon($email);
+}
+.icon--fun {
+    @include mcicon($gamepad);
+}
