@@ -1,6 +1,44 @@
 /* -------------------------------
-   Project
+   Projects
 ------------------------------- */
-.project {
-	background: #fff;
+.project__list {
+	margin: rem-calc(10 0);
+
+	.project {
+		background: #fff;
+		padding: rem-calc(10);
+		// margin-right: rem-calc(10);
+		// &:last-child {
+		// 	margin: 0;
+		// }
+	}
+
+	.project__image {
+		width: 100%;
+		height: auto;
+	}
+
+	.project__description {
+		a {
+			color: $link-color;
+		}
+	}
+}
+
+.button {
+	font-family: "Open Sans",Arial,Helvetica,sans-serif;
+	text-align: center;
+	color: #FFF;
+	width: 100%;
+	font-size: 0.875rem;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	display: inline-block;
+	text-decoration: none;
+	background: #DF1E3E none repeat scroll 0% 0%;
+	border-bottom: 3px solid #B21832;
+	margin: 10px 0px;
+	padding: 0.7em 3em;
+	border-radius: 4px;
 }

@@ -13,6 +13,12 @@ body {
     color: $body-font-color;
     font-size: rem-calc(14);
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    // padding: rem-calc(10);
     // background: #323133;
     background: url(../images/back_pattern.png) repeat;
+}
+
+.l-fluid-image {
+    width: 100%;
+    height: auto;
 }

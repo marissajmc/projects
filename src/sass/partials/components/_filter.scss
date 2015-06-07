@@ -2,9 +2,10 @@
    Filter
 ------------------------------- */
 .filter {
-	background: #000;
-	padding: rem-calc(10 15);
-	@include clearfix();
+	// background: #000;
+	background: url(../images/black_lozenge.png) repeat;
+	padding: rem-calc(9 14);
+	margin: rem-calc(10 0 15);
 	// margin-top: rem-calc(30);
 	// width: 50em;
 	// margin: 2em auto 0;
@@ -14,10 +15,19 @@
 		// text-align: center;
 		// margin: auto;
 		// border: 1px solid #00cc00
+		
 	}
-	border-radius: rem-calc(8);
-	margin: rem-calc(10);
-	color: #fff;
+	border: 1px solid #555;
+	border-radius: rem-calc(6);
+	color: #888;
+}
+
+.filter__inner {
+	// max-width: 45em;
+	// margin: 0 auto;
+	// @media #{$medium-up} {
+	// 	float: left
+	// }
 }
 
 .filter__toggle {
@@ -30,9 +40,6 @@
 		font-size: rem-calc(23);
 		position: relative;
 		top: -2px;
-	}
-	&:hover {
-		color: inherit
 	}
 	@media #{$medium-up} {
 		float: left;
@@ -90,19 +97,39 @@
 	padding-bottom: rem-calc(5);
 	clear: left;
 	@media #{$medium-up} {
-		padding: 0 1em;
+		padding: 0 rem-calc(14);
 		float: left;
 		clear: none;
+		&:last-child {
+			padding-right: 0
+		}
+	}
+	@media screen and (min-width: 641px) and (max-width: 668px) {
+		padding: 0 rem-calc(10);
 	}
 }
 
 .filter__item__link {
 	color: #fff;
 	display: block;
+	@media #{$medium-up} {
+		
+		&:visited {
+			color: #fff;
+			// text-decoration: underline
+		}
+		&:hover {
+			text-decoration: underline;
+			// color: #555
+		}
+	}
 	&.is-active {
 		color: #555;
 		@media #{$medium-up} {
 			color: $primary-color;
+		}
+		&:hover {
+			text-decoration: none
 		}
 	}
 }

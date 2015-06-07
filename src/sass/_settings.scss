@@ -12,21 +12,23 @@ $include-html-visibility-classes: true;
 // Colors
 $body-font-color: #444;
 $primary-color: #dd295c;
-$primary-color-hover: $primary-color;
+$link-color: #00AF00;
+
+// $row-width: rem-calc(45);
 
 // Fonts
-$h1-font-size: rem-calc(60);
-$h2-font-size: rem-calc(40);
-$h3-font-size: rem-calc(30);
-$h4-font-size: rem-calc(20);
-$h5-font-size: rem-calc(15);
+// $h1-font-size: rem-calc(60);
+// $h2-font-size: rem-calc(40);
+// $h3-font-size: rem-calc(30);
+// $h4-font-size: rem-calc(20);
+// $h5-font-size: rem-calc(15);
 
-// Heading reduction for small screens (subtracted from default h1 sizes)
-$h1-font-reduction: rem-calc(20) !default;
-$h2-font-reduction: rem-calc(12) !default;
-$h3-font-reduction: rem-calc(10) !default;
-$h4-font-reduction: rem-calc(2) !default;
-$h5-font-reduction: rem-calc(1) !default;
+// // Heading reduction for small screens (subtracted from default h1 sizes)
+// $h1-font-reduction: rem-calc(20) !default;
+// $h2-font-reduction: rem-calc(12) !default;
+// $h3-font-reduction: rem-calc(10) !default;
+// $h4-font-reduction: rem-calc(2) !default;
+// $h5-font-reduction: rem-calc(1) !default;
 
 // media query ranges
 $small-range: (0em, 40em);

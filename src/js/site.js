@@ -43,6 +43,8 @@
                 
                 $this.addClass('is-active');
                 filter.$toggle.removeClass('is-open');
+
+                // track ga
             });
         };
 

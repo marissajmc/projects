@@ -5,20 +5,33 @@
 h1,h2,h3,h4,h5,h6 {
     -webkit-font-smoothing: antialiased;
     display: block;
+    line-height: 1;
+    font-weight: normal;
+}
+
+h1 {
+    // font-family: "Sansita One";
+    color: #fff;
+    margin: 0;
+}
+
+h3 {
+    color: $primary-color;
+    font-size: rem-calc(14);
 }
 
 a {
 	text-decoration: none;
     outline: none;  
-    &:visited {
-        color: inherit
-    }
-    &:hover {
-        color: $primary-color-hover;
-    }
+    // &:visited {
+    //     color: inherit
+    // }
+    // &:hover {
+    //     // color: $primary-color-hover;
+    // }
 }
 
-.unstyled-list {
+.unstyled {
     margin: 0;
     padding: 0;
     li {

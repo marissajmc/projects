@@ -18,7 +18,7 @@
 
 //	 "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid", 
+     "foundation/components/block-grid", 
 //   "foundation/components/breadcrumbs",
 //   "foundation/components/button-groups",
 //   "foundation/components/buttons",
@@ -48,20 +48,23 @@
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
 //   "foundation/components/top-bar",
-	"foundation/components/type",
+// 	"foundation/components/type",
 //   "foundation/components/offcanvas",
      "foundation/components/visibility";
 
 
 /*==========  Custom Styles  ==========*/
 
-@import 
-	"partials/mixin.scss",
-	"partials/icons.scss",
-	"partials/normalize.scss",
-	"partials/base.scss",
-	"partials/typography.scss",
-	"partials/layout.scss",
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/mixin";
+@import "partials/icons";
+@import "partials/typography";
 
-	"partials/components/filter.scss",
-	"partials/components/projects.scss";
+// global
+@import "partials/global/header";
+@import "partials/global/footer";
+
+// content
+@import "partials/components/filter";
+@import "partials/components/projects";
