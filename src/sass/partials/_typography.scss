@@ -15,14 +15,13 @@ h1 {
     margin: 0;
 }
 
-h3 {
-    color: $primary-color;
-    font-size: rem-calc(14);
-}
-
 a {
 	text-decoration: none;
     outline: none;  
+    color: $primary-color;
+    // &:hover {
+    //     text-decoration: underline;
+    // }
     // &:visited {
     //     color: inherit
     // }

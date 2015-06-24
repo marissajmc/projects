@@ -10,11 +10,13 @@ $include-html-block-grid-classes: true;
 $include-html-visibility-classes: true;
 
 // Colors
-$body-font-color: #444;
+$body-font-color: #1E2225;
 $primary-color: #dd295c;
 $link-color: #00AF00;
+$header-footer-bg: url(../img/black_lozenge.png) repeat;
 
-// $row-width: rem-calc(45);
+// $row-width: rem-calc(900);
+$column-gutter: rem-calc(37);
 
 // Fonts
 // $h1-font-size: rem-calc(60);

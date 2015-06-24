@@ -5,9 +5,9 @@
   "main": "src/js/main.js",
   "js" : {
     "site.min" : [
-      "src/vendor/underscore/underscore.js",
       "src/vendor/foundation/js/foundation/foundation.js",
       "src/vendor/foundation/js/foundation/foundation.interchange.js",
+      "src/vendor/foundation/js/foundation/foundation.equalizer.js",
       "src/js/site.js"
     ],
     "modernizr": [

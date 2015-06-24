@@ -1,7 +1,11 @@
 (function($, document, window, undefined){
     "use strict";
 
-    $(document).foundation();
+    $(document).foundation({
+        equalizer: {
+            equalize_on_stack: true
+        }
+    });
 
     window.projects = window.projects || {};
 

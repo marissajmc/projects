@@ -8,7 +8,7 @@
                 tasks : ["css"]
             },
             image : {
-                files : "src/images/**",
+                files : "src/img/**",
                 tasks : ["image"]
             },
             js : {

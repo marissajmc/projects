@@ -14,11 +14,42 @@ body {
     font-size: rem-calc(14);
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
     // padding: rem-calc(10);
-    // background: #323133;
-    background: url(../images/back_pattern.png) repeat;
+    background: #EEECDD;
+    // background: url(../img/back_pattern.png) repeat;
 }
 
 .l-fluid-image {
     width: 100%;
     height: auto;
+    display: block;
+}
+
+.first-word {
+    font-family: "Sansita One";
+    font-style: normal;
+    font-size: rem-calc(24);
+    color: $primary-color;
+    position: relative;
+    top: 1px;
+    line-height: 1;
+}
+
+.about {
+    // border: 1px dashed #333;
+    // padding: rem-calc(16);
+    // max-width: rem-calc(700);
+    margin-top: rem-calc(16);
+    margin-bottom: rem-calc(8);
+    // text-align: center;
+    p:first-child {
+        // text-align: center; 
+    }
+    p {
+        margin-bottom: rem-calc(13);
+    }
+}
+
+
+p {
+    
 }

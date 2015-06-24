@@ -4,10 +4,15 @@
 .site-header {
     padding-top: rem-calc(6);
     // background: url(../images/maple_grove_large.jpg) no-repeat top center;
-    background: #000;
+    background: $header-footer-bg;
+
+    h3 {
+	    color: $primary-color;
+	    font-size: rem-calc(14);
+	}
 }
 
-.site-header__logo {
+.site-header__title {
     text-align: center;
     @media #{$medium-up} {
 		text-align: left;

@@ -1,24 +1,38 @@
 /* -------------------------------
    Filter
 ------------------------------- */
+.filter__wrapper {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #555;
+	// border-radius: rem-calc(6);
+	background: url(../img/black_lozenge.png) repeat;
+}
 .filter {
-	// background: #000;
-	background: url(../images/black_lozenge.png) repeat;
-	padding: rem-calc(9 14);
-	margin: rem-calc(10 0 15);
+	// border: 1px solid #555;
+	// border-radius: rem-calc(6);
+	// background: url(../img/black_lozenge.png) repeat;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: rem-calc(9 19);
+	// margin-top: rem-calc(10);
+	// margin-bottom: rem-calc(10);
+	// margin-left: auto;
+	// margin-right: auto;
 	// margin-top: rem-calc(30);
 	// width: 50em;
 	// margin: 2em auto 0;
 	// border-radius: rem-calc(10);
-	@media #{$medium-up} {
+	@media #{$large-up} {
+		padding-left: 0;
+		// padding: rem-calc(9 14);
 		// width: 100%;
 		// text-align: center;
 		// margin: auto;
 		// border: 1px solid #00cc00
 		
 	}
-	border: 1px solid #555;
-	border-radius: rem-calc(6);
+	
 	color: #888;
 }
 
@@ -89,7 +103,6 @@
 		height: auto;
 		overflow: auto;
 	}
-
 }
 
 .filter__item {

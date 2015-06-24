@@ -6,9 +6,9 @@
             dynamic: {                         // Another target
               files: [{
                 expand: true,                  // Enable dynamic expansion
-                cwd: 'src/images',                // Src matches are relative to this path
+                cwd: 'src/img',                // Src matches are relative to this path
                 src: ['**/*.{png,jpg,gif,svg}'],   // Actual patterns to match
-                dest: 'dist/images'               // Destination path prefix
+                dest: 'dist/img'               // Destination path prefix
               }]
             }
         };
