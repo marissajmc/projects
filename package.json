@@ -3,10 +3,9 @@
   "author": "Marissa Cookson",
   "version": "0.0.0",
   "main": "src/js/main.js",
-  "js" : {
-    "site.min" : [
+  "js": {
+    "site.min": [
       "src/vendor/foundation/js/foundation/foundation.js",
-      "src/vendor/foundation/js/foundation/foundation.interchange.js",
       "src/vendor/foundation/js/foundation/foundation.equalizer.js",
       "src/js/site.js"
     ],
@@ -25,6 +24,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^0.7.0",
     "grunt-sass": "^0.14.1",
+    "grunt-webfont": "^0.5.4",
     "load-grunt-tasks": "^0.6.0",
     "underscore": "^1.7.0"
   }

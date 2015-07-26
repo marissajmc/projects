@@ -2,54 +2,40 @@
    Base styles
 ------------------------------- */
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
 * {
-  	@include box-sizing(border-box);
+  	box-sizing: border-box;
   	-webkit-text-size-adjust: none;
-  	margin: 0;
-  	padding: 0;
 }
 
 body {
     color: $body-font-color;
     font-size: rem-calc(14);
-    font-family: "Open Sans",Arial,Helvetica,sans-serif;
-    // padding: rem-calc(10);
-    background: #EEECDD;
-    // background: url(../img/back_pattern.png) repeat;
+    line-height: 1.3;
+    // font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-family: Arial;
+    background: #f9f9f9; //F5F4F1
+    border-top: 3px solid $primary-color;
+    // background: url(../img/ricepaper2.png) repeat;
+    padding-top: rem-calc(17);
+    @media #{$medium-up} {
+        padding-top: rem-calc(60);
+    }
 }
 
-.l-fluid-image {
-    width: 100%;
-    height: auto;
+article {
+    padding: rem-calc(16);
+    padding-top: 0;
+    @media #{$medium-up} {
+        margin-top: rem-calc(40);
+    }
+}
+
+.badge {
     display: block;
-}
-
-.first-word {
-    font-family: "Sansita One";
-    font-style: normal;
-    font-size: rem-calc(24);
-    color: $primary-color;
     position: relative;
-    top: 1px;
-    line-height: 1;
-}
-
-.about {
-    // border: 1px dashed #333;
-    // padding: rem-calc(16);
-    // max-width: rem-calc(700);
-    margin-top: rem-calc(16);
-    margin-bottom: rem-calc(8);
-    // text-align: center;
-    p:first-child {
-        // text-align: center; 
-    }
-    p {
-        margin-bottom: rem-calc(13);
-    }
-}
-
-
-p {
-    
+    left: rem-calc(-14);
 }

@@ -3,17 +3,20 @@
 ------------------------------- */
 .filter__wrapper {
 	width: 100%;
-	margin: 0 auto;
-	border: 1px solid #555;
-	// border-radius: rem-calc(6);
+	// margin: 0 auto;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	border-radius: rem-calc(3);
 	background: url(../img/black_lozenge.png) repeat;
+	// border: 1px dashed #000;
 }
 .filter {
 	// border: 1px solid #555;
 	// border-radius: rem-calc(6);
 	// background: url(../img/black_lozenge.png) repeat;
-	max-width: 960px;
-	margin: 0 auto;
+	
+	// margin-left: rem-calc(20);
+	// margin: 0 auto;
 	padding: rem-calc(9 19);
 	// margin-top: rem-calc(10);
 	// margin-bottom: rem-calc(10);
@@ -24,7 +27,9 @@
 	// margin: 2em auto 0;
 	// border-radius: rem-calc(10);
 	@media #{$large-up} {
-		padding-left: 0;
+		// padding-left: 0;
+		// max-width: 628px;
+		// margin: 0 auto;
 		// padding: rem-calc(9 14);
 		// width: 100%;
 		// text-align: center;
@@ -36,25 +41,17 @@
 	color: #888;
 }
 
-.filter__inner {
-	// max-width: 45em;
-	// margin: 0 auto;
-	// @media #{$medium-up} {
-	// 	float: left
-	// }
-}
-
 .filter__toggle {
 	cursor: pointer;
-	color: #fff;
+	// color: #fff;
 	width: 100%;
 	display: block;
-	@include mcicon($plus, after){
-		float: right;
-		font-size: rem-calc(23);
-		position: relative;
-		top: -2px;
-	}
+	// @include icon($plus, after){
+	// 	float: right;
+	// 	font-size: rem-calc(23);
+	// 	position: relative;
+	// 	top: -2px;
+	// }
 	@media #{$medium-up} {
 		float: left;
 		width: auto;
@@ -64,12 +61,12 @@
 	}
 	// animate open
 	&.is-open {
-		@include mcicon($minus, after){
-			float: right;
-			font-size: rem-calc(23);
-			position: relative;
-			top: -2px;
-		}
+		// @include icon($minus, after){
+		// 	float: right;
+		// 	font-size: rem-calc(23);
+		// 	position: relative;
+		// 	top: -2px;
+		// }
 		+ .filter__list {
 			height: rem-calc(151);
 			transition: height 0.2s ease-out;
@@ -124,16 +121,16 @@
 
 .filter__item__link {
 	color: #fff;
-	display: block;
+	text-decoration: none;
 	@media #{$medium-up} {
 		
 		&:visited {
-			color: #fff;
+			// color: #fff;
 			// text-decoration: underline
 		}
 		&:hover {
 			text-decoration: underline;
-			// color: #555
+			color: #fff;
 		}
 	}
 	&.is-active {

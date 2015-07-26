@@ -48,7 +48,7 @@
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
 //   "foundation/components/top-bar",
-// 	"foundation/components/type",
+	"foundation/components/type",
 //   "foundation/components/offcanvas",
      "foundation/components/visibility";
 
@@ -57,14 +57,16 @@
 
 @import "partials/normalize";
 @import "partials/base";
-@import "partials/mixin";
 @import "partials/icons";
-@import "partials/typography";
+@import "partials/mixin";
 
 // global
 @import "partials/global/header";
+@import "partials/global/navigation";
 @import "partials/global/footer";
 
 // content
+@import "partials/components/layout";
+@import "partials/components/type";
 @import "partials/components/filter";
 @import "partials/components/projects";

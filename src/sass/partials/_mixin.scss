@@ -2,47 +2,44 @@
    Mixins
 ------------------------------- */
 
-@mixin box-sizing($box-model) {
-    -webkit-box-sizing: $box-model; // Safari <= 5
-    -moz-box-sizing: $box-model; // Firefox <= 19
-    box-sizing: $box-model;
-}
+/**
+*
+* Mixin to override grunt-webfont's icon mixin.
+* This mixin allows a bit more functionality including
+* specifying whether to use :before or :after pseudo element
+* and manually modifying an icon's font size.
+*
+**/
 
-@mixin mcicon($name, $position: before) {
+@mixin icon($name, $position: before) {
     &:#{$position} {
-        content: $name;
-        font-family: "mcicons";
+        @include icon-content($name);
+
+        @include icon-font-family($name);
         speak: none;
         font-style: normal;
         font-weight: normal;
         font-variant: normal;
         text-transform: none;
         line-height: 1;
+
+        /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        // margin
+
         @if $position == before {
-            margin-right: rem-calc(8);
-            float: left;
+            margin-right: rem-calc(4);
+            position: relative;
+            top: 1px;
         }
-        // sizing
-        width: rem-calc(20);
-        text-align: center;
-        font-size: rem-calc(20);
-        @if ($name == $business) {
-            font-size: rem-calc(16);
-            padding-top: .13em;
-        }
-        @if ($name == $volunteer) {
-            font-size: rem-calc(21);
-        }
-        // mixin content block
+        
         @content;
     }
 }
 
 @mixin clearfix() {
-    &:before, &:after {
+    &:before,
+    &:after {
         content: "";
         display: table;
     }

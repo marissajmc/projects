@@ -9,7 +9,7 @@
                 },
                 options: {
                     watchTask: true,
-                    proxy : "localhost/mcookson/"
+                    proxy : "mcookson.com.localhost:8888"
                 }
             }
         };

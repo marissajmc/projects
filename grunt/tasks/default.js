@@ -4,6 +4,7 @@
     module.exports = function(grunt){
         grunt.registerTask('default', [
             "js",
+            "webfont",
             "css",
             "image"
         ]);
