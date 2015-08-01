@@ -14,77 +14,71 @@
     display: block;
 }
 
-.center-align {
+.l-center-align {
     text-align: center;
 }
 
 .l-bordered-container {
 	background: #fff;
-	padding: rem-calc(14);
 	border: 1px dashed #bbb;
 }
 
-
-// .test {
-//     border-top: 1px dashed lighten($body-font-color, 18%);
-//     border-bottom: 1px dashed lighten($body-font-color, 18%);
-//     padding-top: rem-calc(7);
-//     padding-bottom: rem-calc(11);
-//     h3,h4 {
-//         margin: 0;
-//         line-height: 1;
-//     }
-// }
-
-.sidebar {
-    .columns {
-        height: rem-calc(230);
-        @media #{$medium-up} {
-            height: auto;
-        }
-    }
-    @media #{$medium-only} {
-		padding-right: 0;
-		position: relative;
-		left: rem-calc(1);
+.l-bordered-container--small {
+	@media #{$medium-up} {
+		padding: 0;
+		h1 {
+			left: rem-calc(27);
+		}
 	}
-	h4 {
-		font-family: $body-font-family;
-		color: $body-font-color;
-		// letter-spacing: 0.01em;
-		// @media #{$medium-up} {
-		// 	letter-spacing: 0.027em;
-		// }
+	@media #{$small-only} {
+		background: #fff;
+		border: 1px dashed #bbb;
 	}
 }
 
+.badge {
+    display: inline-block;
+    position: relative;
+    left: rem-calc(-14);
+}
 
 .sketch {
-    max-width: rem-calc(169);
     margin: 0 auto;
     width: 100%;
     height: auto;
     display: block;
-    @media #{$medium-up} {
-        max-width: rem-calc(200);
+    @media #{$medium-down} {
+        max-width: rem-calc(243);
     }
 }
 
 .tagline__wrapper {
     position: relative;
+    @media #{$large-up} {
+		left: rem-calc(12);
+    }
 }
 
 .tagline {
     position: absolute;
-    bottom: rem-calc(1);
+    bottom: 0;
     left: rem-calc(-35);
+    @media screen and (min-width: 480px) {
+		bottom: rem-calc(10);
+		left: rem-calc(-60);
+    }
     @media #{$medium-up} {
     	position: static;
-    	// margin-left: rem-calc(7);
     }
-    @media #{$large-up} {
-    	margin-left: rem-calc(12);
-    }
+}
+
+.tagline__role {
+	font-family: $body-font-family;
+	color: $body-font-color;
+	letter-spacing: 0.015em;
+	@media #{$medium-up} {
+		letter-spacing: .065em;
+	}
 }
 
 .button {
@@ -93,9 +87,11 @@
 	color: #fff;
 	width: 100%;
 	display: block;
+	padding: rem-calc(10 50);
 	@media #{$medium-up} {
 		width: auto;
 		display: inline-block;
+		padding: rem-calc(10 60);
 	}
 	font-weight: normal;
 	font-style: normal;
@@ -103,7 +99,7 @@
 	text-decoration: none;
 	background: $primary-color none repeat scroll 0% 0%;
 	border-bottom: 3px solid darken($primary-color, 11%);
-	padding: rem-calc(10 50);
+	
 	border-radius: 4px;
 	&:hover, &:focus {
         text-decoration: none;
@@ -114,3 +110,28 @@
 .icon--github {
   	@include icon($github);
 }
+
+.icon--linkedin {
+  	@include icon($linkedin);
+}
+
+.icon--stackoverflow {
+  	// @include icon($stackoverflow);
+}
+
+.icon--calendar {
+  	@include icon($calendar);
+}
+
+.icon--volunteer {
+  	@include icon($group);
+}
+
+.icon--business {
+  	@include icon($briefcase){
+  		font-size: rem-calc(12);
+  		position: relative;
+  		top: 0;
+  	}
+}
+

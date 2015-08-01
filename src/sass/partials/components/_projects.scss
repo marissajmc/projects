@@ -2,48 +2,24 @@
    Projects
 ------------------------------- */
 .project__list {
+	// display: flex;
+	// flex-wrap: wrap;
+
 	margin: rem-calc(16 0);
+	@media #{$medium-up} {
+		margin-top: 0;
+	}
 
 	.project {
-		// float: left;
+		// display: flex;
 		padding: 0;
-		// margin: rem-calc(16);
-		// width: 50%;
-		// &:last-child {
-		// 	margin: 0;
-		// }
-		// padding-left: 0;
-		// padding-bottom: rem-calc(16);
+		margin-bottom: rem-calc(16);
 		position: relative;
-		// padding-right: 0;
-		// padding-left: rem-calc(20);
-		// padding: 0;
-		
-		// &:hover {
-		// 	border-color: $primary-color;
-		// }
-		// @include mcicon($business, after){
-		// 	width: 35px;
-		// 	height: 30px;
-		// 	position: absolute;
-		// 	top: -1px;
-		// 	right: -1px;
-		// 	background: $primary-color;
-		// 	font-size: rem-calc(22);
-		// 	color: #fff;
-		// };
-
-		&:first-child {
-			.project__description {
-				border-top: 1px dashed #bbb;
-			}
+		@media #{$medium-up} {
+			padding-right: rem-calc(14);
+			padding-bottom: rem-calc(14);
+			margin-bottom: 0;
 		}
-		&:last-child {
-			.project__description {
-				border-bottom: 1px dashed #bbb;
-			}
-		}
-
 	}
 
 	.project__image {
@@ -56,54 +32,26 @@
 		margin-bottom: rem-calc(7);
 	}
 
+	.project__date {
+		// float: right;
+	}
+
 	.project__meta {
-		float: left;
+		@include clearfix();
 		width: 100%;
 	}
 
 	.project__category {
+		float: left;
 		padding-right: rem-calc(8);
-		@include icon($github, before);
 	}
-
-	
 
 	.project__description {
-		// background: #fff;
-		// padding: rem-calc(8);
 		background: #fff;
-		padding: rem-calc(14);
-		border-left: 1px dashed #bbb;
-		border-right: 1px dashed #bbb;
-		p {
-			margin: 0;
+		@media #{$medium-up} {
+			padding: rem-calc(14);
+			border: 1px dashed #bbb;
 		}
-	}
-
-	@media #{$medium-up} {
-		.project__category,
-		.project__date {
-			float: left;
-		}
-		.project {
-			padding-right: rem-calc(14);
-			padding-bottom: rem-calc(14);
-		}
-		.project__description {
-			border-top: 1px dashed #bbb;
-			border-bottom: 1px dashed #bbb;
-		}
-	}
-
-	.project__url {
-		color: #000;
-	    font-family: "Georgia";
-	    font-weight: bold;
-	    text-decoration: underline;
-	    &:hover {
-	    	text-decoration: none;
-	    }
-	    font-size: rem-calc(14);
 	}
 
 }

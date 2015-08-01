@@ -1,0 +1,47 @@
+ul {
+    margin-left: rem-calc(14);
+}
+
+.unstyled {
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+.toolkit-list {
+    @media #{$medium-up} {
+        width: 50%;
+    }
+    @include clearfix();
+    li {
+        float: left;
+        width: 50%;
+    }
+}
+
+.social-list {
+    width: rem-calc(145);
+    text-align: center;
+    li {
+        display: inline-block;
+        margin-right: rem-calc(2);
+        a {
+            color: $body-font-color;
+            text-decoration: none;
+            &:hover {
+                color: #000;
+            }
+            &:before {
+                font-size: rem-calc(23);
+            }
+            &.icon--linkedin {
+                &:before {
+                    font-size: rem-calc(20);
+                    position: relative;
+                    top: -1px;
+                }
+            }
+        }
+    }
+}

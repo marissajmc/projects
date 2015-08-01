@@ -1,0 +1,28 @@
+/* -------------------------------
+   Containers
+------------------------------- */
+.sidebar {
+    .columns {
+        height: rem-calc(230);
+        @media #{$medium-up} {
+            height: auto;
+        }
+    }
+    @media #{$medium-only} {
+		padding-right: 0;
+		position: relative;
+		left: rem-calc(1);
+	}
+}
+
+.content {
+    padding: rem-calc(16);
+    padding-top: 0;
+    @media #{$medium-up} {
+        margin-top: rem-calc(40);
+    }
+}
+
+section {
+	padding: rem-calc(14);
+}

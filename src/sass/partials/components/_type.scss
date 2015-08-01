@@ -12,7 +12,9 @@ h1,h2,h3,h4,h5,h6 {
         margin: 0;
     }
 
-    font-family: "Bree Serif";
+    letter-spacing: 0.01em;
+
+    font-family: $brand-font-family;
 }
 
 h1 {
@@ -54,17 +56,6 @@ a {
     }
 }
 
-.toolkit-list {
-    @media #{$medium-up} {
-        width: 50%;
-    }
-    @include clearfix();
-    li {
-        float: left;
-        width: 50%;
-    }
-}
-
 .first-word {
     font-family: "Sansita One";
     font-style: normal;
@@ -75,13 +66,6 @@ a {
     font-size: rem-calc(22);
     @media #{$medium-up} {
         font-size: rem-calc(26);
-    }
-}
-
-.unstyled {
-    margin: 0;
-    li {
-        list-style-type: none;
     }
 }
 

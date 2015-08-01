@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 * {
   	box-sizing: border-box;
   	-webkit-text-size-adjust: none;
@@ -22,20 +23,6 @@ body {
     // background: url(../img/ricepaper2.png) repeat;
     padding-top: rem-calc(17);
     @media #{$medium-up} {
-        padding-top: rem-calc(60);
+        padding-top: rem-calc(45);
     }
-}
-
-article {
-    padding: rem-calc(16);
-    padding-top: 0;
-    @media #{$medium-up} {
-        margin-top: rem-calc(40);
-    }
-}
-
-.badge {
-    display: block;
-    position: relative;
-    left: rem-calc(-14);
 }

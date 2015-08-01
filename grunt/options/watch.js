@@ -17,7 +17,7 @@
             },
             icons : {
                 files : ["src/icons/*.svg"],
-                tasks : ["font"]
+                tasks : ["webfont"]
             },
             options : {
                 spawn : false
