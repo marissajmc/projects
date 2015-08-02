@@ -2,10 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Marissa Cookson | Front-end Developer</title>
+    <title>Contact - Marissa Cookson | Front-end Developer</title>
     <meta name="description" content="A showcase of web development projects I've designed, built and managed in my spare time">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/style.css">
+	<script src="dist/js/modernizr.js"></script>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-3188203-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
 
