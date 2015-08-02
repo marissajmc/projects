@@ -59,12 +59,10 @@
 @import "partials/base";
 @import "partials/icons";
 @import "partials/mixin";
-@import "partials/breakpoints";
 
 // global
-@import "partials/global/header";
-@import "partials/global/navigation";
-@import "partials/global/footer";
+// @import "partials/global/header";
+// @import "partials/global/navigation";
 
 // content
 @import "partials/components/type";
@@ -72,4 +70,4 @@
 @import "partials/components/layout";
 @import "partials/components/containers";
 //@import "partials/components/filter";
-@import "partials/components/projects";
+@import "partials/components/project-list";

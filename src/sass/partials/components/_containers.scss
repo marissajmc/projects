@@ -15,14 +15,38 @@
 	}
 }
 
-.content {
+.page-content__wrapper {
     padding: rem-calc(16);
     padding-top: 0;
     @media #{$medium-up} {
         margin-top: rem-calc(40);
+        padding-top: rem-calc(12);
     }
 }
 
-section {
-	padding: rem-calc(14);
+.page-content {
+    padding: rem-calc(14);
+}
+
+.page-header {
+    @media #{$medium-up} {
+        position: absolute;
+        top: rem-calc(-90);
+    }
+}
+
+.page-footer {
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+    font-style: italic;
+    font-size: rem-calc(11.5);
+    a {
+        color: $body-font-color;
+    }
+    @media #{$medium-only} {
+        padding-left: rem-calc(16);
+    }
+    @media #{$medium-up} {
+        font-size: rem-calc(12);
+    }
 }

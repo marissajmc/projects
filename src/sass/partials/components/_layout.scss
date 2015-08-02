@@ -26,13 +26,9 @@
 .l-bordered-container--small {
 	@media #{$medium-up} {
 		padding: 0;
-		h1 {
-			left: rem-calc(27);
-		}
 	}
 	@media #{$small-only} {
-		background: #fff;
-		border: 1px dashed #bbb;
+		@extend .l-bordered-container;
 	}
 }
 
@@ -52,32 +48,64 @@
     }
 }
 
+.main-navigation {
+	// text-align: center;
+	padding-top: rem-calc(5);
+	padding-bottom: rem-calc(20);
+	
+	@media #{$medium-up} {
+		padding-top: rem-calc(20);
+		padding-bottom: rem-calc(20);
+	}
+	a {
+		color: #5372d8;
+		margin-right: rem-calc(10);
+		&.active {
+			text-decoration: none;
+			color: #000;
+			// border: 1px solid #bbb;
+			// padding: rem-calc(4 14);
+			// border-radius: 6px;
+			// background: #fff;
+			// background: $primary-color;
+		}
+	}
+}
+
 .tagline__wrapper {
-    position: relative;
-    @media #{$large-up} {
-		left: rem-calc(12);
+    @media #{$medium-up} {
+		margin-right: 10%;
     }
 }
 
-.tagline {
+.inner {
     position: absolute;
-    bottom: 0;
+    bottom: rem-calc(10);
     left: rem-calc(-35);
+    text-align: center;
     @media screen and (min-width: 480px) {
-		bottom: rem-calc(10);
 		left: rem-calc(-60);
     }
     @media #{$medium-up} {
     	position: static;
+    	width: rem-calc(165);
+    	margin: 0 auto;
     }
+}
+
+.tagline__name {
+	padding-left: .1em;
+	// letter-spacing: 0.025em;
 }
 
 .tagline__role {
 	font-family: $body-font-family;
 	color: $body-font-color;
-	letter-spacing: 0.015em;
+	letter-spacing: 0.025em;
+	margin-bottom: rem-calc(5);
 	@media #{$medium-up} {
-		letter-spacing: .065em;
+		// letter-spacing: .065em;
+		margin-bottom: rem-calc(8);
 	}
 }
 
@@ -134,4 +162,3 @@
   		top: 0;
   	}
 }
-

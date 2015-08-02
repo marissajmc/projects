@@ -5,7 +5,7 @@
     <title>Projects - Marissa Cookson | Front-end Developer</title>
     <meta name="description" content="A showcase of web development projects I've designed, built and managed in my spare time">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu%7COpen+Sans%7CAmaranth%7CBree+Serif" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab%7CRoboto" />
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="dist/js/modernizr.js"></script>
 </head>
@@ -42,7 +42,7 @@
 				<h3 class="site-header__tagline">Front-end developer</h3>
 			</nav> -->
 		</aside>
-		<article class="columns medium-9 content">
+		<article class="columns medium-9 page-content">
 			
 			<section class="l-bordered-container--small">
 				<h1>Projects</h1>
@@ -64,9 +64,9 @@
 					<li class="project">
 						<div class="project__description">
 							<a href="#"><img src="dist/img/projects/jca.jpg" alt="" class="project__image"></a>
-							<h3 class="project__title"><a href="#">Slow School of Business</a></h3>
+							<h3 class="project__title"><a href="#">Slow School of Business eDM</a></h3>
 							<ul class="unstyled project__meta">
-								<li class="project__category icon--business">eDM</li>
+								<li class="project__category icon--business">Email newsletter</li>
 								<li class="project__date icon--calendar">May 2015</li>
 							</ul>
 							<p>A responsive MailChimp newsletter template.</p>
@@ -101,7 +101,7 @@
 				</ul>
 			</section>
 
-			<footer class="site__footer">
+			<footer class="page-footer">
 				&copy; <?php echo date("Y"); ?> Marissa Cookson &bull;
 				Illustration by <a href="https://www.etsy.com/au/shop/IllustratedByFFrick" target="_blank">Fernanda Frick</a> 
 			</footer>
