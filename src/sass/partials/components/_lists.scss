@@ -41,13 +41,6 @@ ul {
             &:before {
                 font-size: rem-calc(23);
             }
-            &.icon--linkedin {
-                &:before {
-                    font-size: rem-calc(20);
-                    position: relative;
-                    top: -1px;
-                }
-            }
         }
     }
 }

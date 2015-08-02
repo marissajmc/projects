@@ -39,47 +39,14 @@
 
 				<header class="page-header">
 					<nav class="main-navigation">
-						<a href="/" class="active">About</a>
+						<a href="/">About</a>
 						<a href="/projects">Projects</a>
-						<a href="/contact">Contact</a>
+						<a href="/contact" class="active">Contact</a>
 					</nav>
-					<h1>About</h1>
+					<h1>Contact</h1>
 				</header>
 				
-				<p>Hello I'm Marissa, a front-end developer from Melbourne, Australia.</p>
-				<p>I've been coding professionally for the web since 2008. I dabble in design in my <a href="/projects">personal projects</a>, but aside from this, front-end dev is my bread &amp; butter. My specialities include building responsive websites (with modular html/css/js), coding &amp; managing email newsletter campaigns, and QA testing.</p>
-				<p>I enjoy working with a team of developers &amp; designers in an agency environment. I also like to work independently and engage one-on-one with clients to deliver a tailored solution that meets their needs.</p>
-				<p>To that end, here is a showcase of side projects that I've designed, built and managed in my spare time.</p>
-
-				<div class="row">
-					<div class="columns">
-						<h3>Daily Tools</h3>
-						<ul class="toolkit-list">
-							<li>Grunt</li>
-							<li>Sublime Text</li>
-							<li>Bower</li>
-							<li>GitHub</li>
-							<li>Sass</li>
-							<li>Twig</li>
-							<li>jQuery</li>
-							<li>Litmus</li>
-							<li>Foundation 5</li>
-							<li>BrowserStack</li>
-						</ul>
-					</div>
-					<div class="columns">
-						<h3>Certifications</h3>
-						<ul>
-							<li>DoubleClick Studio QA Certified<br />
-								<a class="badge" href="http://www.richmediagallery.com/tools/certified-users#certifiedUser:5202~" target="_blank">
-									<img src="dist/img/QA.png" alt="DoubleClick Studio QA Certified">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<p><a href="/projects" class="button">View Projects</a></p>
+				<p>Want to discuss your favourite Doctor or send an enquiry? Feel free to contact me at <a href="mailto:marissjmc@gmail.com">marissajmc@gmail.com</a></p>
 
 			</section>
 

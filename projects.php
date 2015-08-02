@@ -5,97 +5,95 @@
     <title>Projects - Marissa Cookson | Front-end Developer</title>
     <meta name="description" content="A showcase of web development projects I've designed, built and managed in my spare time">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab%7CRoboto" />
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="dist/js/modernizr.js"></script>
 </head>
 <body>
 
 	<main class="row">
-		<aside class="columns medium-3 sidebar">
-
+		<aside class="columns medium-4 large-3 sidebar">
+			
 			<div class="row collapse">
 				<div class="columns small-7 medium-12">
-					<img width="260" src="dist/img/sketch.png" alt="Illustration by Fernanda Frick" class="sketch">
+					<img class="sketch" width="260" src="dist/img/sketch.png" alt="sketch of Marissa by Fernanda Frick" title="Illustration by Fernanda Frick">
 				</div>
 				<div class="columns small-5 medium-12 tagline__wrapper">
-					<div class="tagline">
-						<h2 class="tagline__name collapse">Marissa Cookson</h2>
-						<h4 class="tagline__role">Front-end developer</h4>
+					<div class="tagline__inner">
+						<div class="tagline">
+							<h2 class="tagline__name collapse">Marissa Cookson</h2>
+							<h4 class="tagline__role">Front-end developer</h4>
+						</div>
+						<ul class="unstyled social-list">
+							<li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
+							<li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
+							<li><a href="http://stackoverflow.com/users/872018/marissajmc#" class="icon--stackoverflow" target="_blank"></a></li>
+						</ul>
 					</div>
-					
-					<ul class="unstyled social-list">
-						<li><a href="#" class="icon--github"></a></li>
-						<li><a href="#" class="icon--linkedin"></a></li>
-						<li><a href="#" class="icon--github"></a></li>
-					</ul>
 				</div>
 			</div>
-			
-			<!-- <nav>
-				<ul class="unstyled site-navigation">
-					<li><a href="/" class="active">about</a></li>
-					<li><a href="#">projects</a></li>
-					<li><a href="#">contact</a></li>
-				</ul>
-				<h2 class="site-header__logo">mcookson</h2>
-				<h3 class="site-header__tagline">Front-end developer</h3>
-			</nav> -->
 		</aside>
-		<article class="columns medium-9 page-content">
+
+		<article class="columns medium-8 large-9 content__wrapper">
 			
-			<section class="l-bordered-container--small">
-				<h1>Projects</h1>
-				<ul class="small-block-grid-1 medium-block-grid-2 project__list">
+			<section class="l-bordered-container--small content">
+
+				<header class="page-header">
+					<nav class="main-navigation">
+						<a href="/">About</a>
+						<a href="/projects" class="active">Projects</a>
+						<a href="/contact">Contact</a>
+					</nav>
+					<h1>Projects</h1>
+				</header>
+
+				<ul class="small-block-grid-1 large-block-grid-2 project__list">
 					<li class="project">
 						<div class="project__description">
-							<a href="#"><img src="dist/img/projects/jca.jpg" alt="" class="project__image"></a>
-							<h3 class="project__title"><a href="#">Julia's Celebrant Agency</a></h3>
-
+							<a href="https://juliascelebrantagency.com/" target="_blank"><img src="dist/img/projects/jca.jpg" alt="" class="project__image"></a>
+							<h3 class="project__title"><a href="https://juliascelebrantagency.com/" target="_blank">Julia's Celebrant Agency</a></h3>
 							<ul class="unstyled project__meta">
-								<li class="project__category icon--business">Small business</li>
-								<li class="project__date icon--calendar">January 2015</li>
+								<li class="project__category icon icon--business">Small business</li>
+								<li class="project__date icon icon--calendar">January 2015</li>
 							</ul>
-
-							<p>Search, compare and book a Celebrant who is available based on the wedding day, time &amp; location you choose.</p>
-							<a href="#" class="project__cta">&gt; Visit Site</a>
+							<p>Search, compare and book a Celebrant who is available based on the wedding day, time &amp; location you choose. Custom back-end portal &amp; availability calendar by <a href="http://clearsky.net.au/" target="_blank">Cody Joyce</a>.</p>
+							<a href="https://juliascelebrantagency.com/" class="project__cta" target="_blank">Visit Site</a>
 						</div>
 					</li>
 					<li class="project">
 						<div class="project__description">
-							<a href="#"><img src="dist/img/projects/jca.jpg" alt="" class="project__image"></a>
-							<h3 class="project__title"><a href="#">Slow School of Business eDM</a></h3>
+							<a href="http://us5.campaign-archive2.com/?u=d66c567f37d15bd06302b2f6b&amp;id=d6dcf12a28" target="_blank"><img src="dist/img/projects/slowschool.jpg" alt="" class="project__image"></a>
+							<h3 class="project__title"><a href="http://us5.campaign-archive2.com/?u=d66c567f37d15bd06302b2f6b&amp;id=d6dcf12a28" target="_blank">The Slow School of Business</a></h3>
 							<ul class="unstyled project__meta">
-								<li class="project__category icon--business">Email newsletter</li>
-								<li class="project__date icon--calendar">May 2015</li>
+								<li class="project__category icon icon--email">eDM</li>
+								<li class="project__date icon icon--calendar">May 2015</li>
 							</ul>
-							<p>A responsive MailChimp newsletter template.</p>
-							<a href="http://us5.campaign-archive2.com/?u=d66c567f37d15bd06302b2f6b&amp;id=d6dcf12a28">&gt; View eDM</a>
+							<p>A responsive MailChimp newsletter template for Melbourne start-up The Slow School of Business to promote their upcoming events.</p>
+							<a href="http://us5.campaign-archive2.com/?u=d66c567f37d15bd06302b2f6b&amp;id=d6dcf12a28" class="project__cta" target="_blank">View eDM</a>
 						</div>
 					</li>
-					<li class="project">
+					<li class="project collapse-bottom">
 						<div class="project__description">
-							<a href="#"><img src="dist/img/projects/tvh.jpg" alt="" class="project__image"></a>
-							<h3 class="project__title"><a href="#">The Vision House</a></h3>
+							<a href="http://www.thevisionhouse.com.au/" target="_blank"><img src="dist/img/projects/tvh.jpg" alt="" class="project__image"></a>
+							<h3 class="project__title"><a href="http://www.thevisionhouse.com.au/" target="_blank">The Vision House</a></h3>
 							<ul class="unstyled project__meta">
-								<li class="project__category icon--business">Small business</li>
-								<li class="project__date icon--calendar">April 2014</li>
+								<li class="project__category icon icon--business">Small business</li>
+								<li class="project__date icon icon--calendar">April 2014</li>
 							</ul>
 							<p>Website rebuild for The Vision House, a local cine rental company which provides tailored camera packages for film makers around Australia and NZ.</p>
-							<a href="#">&gt; Details</a>
+							<a href="http://www.thevisionhouse.com.au/" class="project__cta" target="_blank">Visit Site</a>
 						</div>
 					</li>
-					<li class="project">
+					<li class="project collapse-bottom">
 						<div class="project__description">
-							<a href="#"><img src="dist/img/projects/portsea.jpg" alt="" class="project__image"></a>
-							<h3 class="project__title"><a href="#">The Portsea Camp</a></h3>
+							<a href="http://www.theportseacamp.com.au/" target="_blank"><img src="dist/img/projects/portsea.jpg" alt="" class="project__image"></a>
+							<h3 class="project__title"><a href="http://www.theportseacamp.com.au/" target="_blank">The Portsea Camp</a></h3>
 							<ul class="unstyled project__meta">
-								<li class="project__category icon--volunteer">Volunteer</li>
-								<li class="project__date icon--calendar">September 2014</li>
+								<li class="project__category icon icon--volunteer">Volunteer</li>
+								<li class="project__date icon icon--calendar">September 2014</li>
 							</ul>
-							<p>I volunteered via <a href="https://www.goodcompany.com.au/browse/Vacancy.aspx?VacancyId=79277" target="_blank">goodcompany.com.au</a> to rebuild children's charity The Portsea Camp's 7-year-old part flash website, providing a new design &amp; custom WordPress theme for staff to edit content.
+							<p>I volunteered via <a href="https://www.goodcompany.com.au/browse/Vacancy.aspx?VacancyId=79277" target="_blank">goodcompany.com.au</a> to rebuild children's charity The Portsea Camp's website, providing a responsive design &amp; custom WordPress theme for editing content.
 							</p>
-							<a href="#">&gt; Visit Site</a>
+							<a href="http://www.theportseacamp.com.au/" class="project__cta" target="_blank">Visit Site</a>
 						</div>
 					</li>
 				</ul>

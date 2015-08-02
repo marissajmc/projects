@@ -18,9 +18,9 @@ $anchor-font-color-hover: $primary-color;
 // $row-width: rem-calc(1100);
 
 // Fonts
-$brand-font-family: "Roboto Slab";
-$body-font-family: "Roboto";
-
+$brand-font-family: "Trebuchet MS";
+$body-font-family: "Arial";
+$body-font-size: rem-calc(15);
 $h1-font-size: rem-calc(25);
 $h2-font-size: rem-calc(19);
 $h3-font-size: rem-calc(17);
@@ -30,8 +30,8 @@ $paragraph-font-size: 14;
 // Heading reduction for small screens (subtracted from default h1 sizes)
 $h1-font-reduction: rem-calc(4);
 $h2-font-reduction: rem-calc(3);
-$h3-font-reduction: rem-calc(0);
-$h4-font-reduction: rem-calc(2);
+$h3-font-reduction: rem-calc(2);
+$h4-font-reduction: rem-calc(1);
 
 // Media Queries
 $small-range: (0em, 40em);
