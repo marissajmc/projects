@@ -1,0 +1,25 @@
+/* -------------------------------
+   Layout
+------------------------------- */
+.collapse-small,
+.collapse-small .columns {
+	@media #{$small-only} {
+		padding: 0;
+	}
+}
+
+.l-fluid-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.l-center-align {
+    text-align: center;
+}
+
+.l-bordered-container {
+	background: #fff;
+	border: 1px dashed #bbb;
+}
+

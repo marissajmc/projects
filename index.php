@@ -6,6 +6,7 @@
     <meta name="description" content="A showcase of web development projects I've designed, built and managed in my spare time">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
 	<script src="dist/js/modernizr.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,7 +20,22 @@
 </head>
 <body>
 
-	<main class="row">
+	<header class="site-header">
+		<div class="site-header__inner">
+			<h1 class="site-title">Marissa Cookson</h1>
+			<h3 class="site-subtitle">Front-end Developer</h3>
+			<ul class="unstyled social-list">
+				<li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
+				<li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
+				<li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
+			</ul>
+			<nav class="site-navigation">
+				<a href="/" class="active">About</a><a href="/projects">Projects</a><a href="/contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- <main class="row">
 
 		<aside class="columns medium-4 large-3 sidebar">
 			
@@ -98,7 +114,7 @@
 				Illustration by <a href="https://www.etsy.com/au/shop/IllustratedByFFrick" target="_blank">Fernanda Frick</a> 
 			</footer>
 		</article>
-	</main>
+	</main> -->
 	
 </body>
 </html>

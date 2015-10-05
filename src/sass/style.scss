@@ -10,7 +10,7 @@
 **/
 
 /*==========  Foundation Settings  ==========*/
-@import "settings";
+@import "partials/settings";
 
 /*==========  Foundation components  ==========*/
 // Add required foundation components here
@@ -57,18 +57,19 @@
 
 @import "partials/normalize";
 @import "partials/base";
+@import "partials/fonts";
 @import "partials/icons";
 @import "partials/mixin";
 
-@import "partials/global/header";
-@import "partials/global/footer";
+@import "global/header";
+@import "global/footer";
 
-@import "partials/components/type";
-@import "partials/components/lists";
-@import "partials/components/layout";
-@import "partials/components/containers";
+@import "components/type";
+@import "components/lists";
+@import "components/layout";
+@import "components/containers";
 
-@import "partials/components/ui";
+@import "components/ui";
 
-@import "partials/components/projects/project-list";
+//@import "components/projects/project-list";
 //@import "partials/components/projects/filter";
