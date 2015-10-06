@@ -5,28 +5,28 @@
 	font-size: rem-calc(14);
 	text-align: center;
 	color: #fff;
-	width: 100%;
-	display: block;
+	width: auto;
+	display: inline-block;
 	padding: rem-calc(10 50);
-
+	
+	margin-top: rem-calc(10);
+	-webkit-font-smoothing: subpixel-antialiased;
 	@media #{$medium-up} {
-		width: auto;
-		display: inline-block;
+		
 		padding: rem-calc(10 60);
 	}
 	
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1;
 	text-decoration: none;
-	background: $primary-color none repeat scroll 0% 0%;
-	border-bottom: 3px solid darken($primary-color, 11%);
 	
 	border-radius: 4px;
-	&:hover, &:focus {
-        text-decoration: none;
-        color: #fff;
-    }
+	// background: lighten(#7D5DFC, 4%);
+	// background: #f65784;
+	background: $primary-color;
+	color: #fff;
+
+	&:hover {
+		color: #fff;
+	}
 }
 
 .icon--github {

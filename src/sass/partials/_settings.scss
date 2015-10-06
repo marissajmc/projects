@@ -10,7 +10,7 @@ $include-html-visibility-classes: true;
 $include-html-type-classes: true;
 
 // Colors
-$body-font-color: #555;
+$body-font-color: #626262;
 $primary-color: #dd295c; //0478c1
 $link-color: #00AF00;
 $anchor-font-color-hover: $primary-color;
@@ -18,20 +18,20 @@ $anchor-font-color-hover: $primary-color;
 // $row-width: rem-calc(1100);
 
 // Fonts
-$brand-font-family: 'FiraSans', sans-serif;
-$body-font-family: 'RalewayLight', sans-serif;
+$brand-font-family: 'RalewayMedium', sans-serif;
+$body-font-family: 'Nunito', sans-serif;
 $body-font-size: rem-calc(14);
+$paragraph-font-size: $body-font-size;
 
 $h1-font-size: rem-calc(48);
-$h2-font-size: rem-calc(30);
+$h2-font-size: rem-calc(20);
 $h3-font-size: rem-calc(16);
 $h4-font-size: rem-calc(15);
-$paragraph-font-size: 14;
 
 // Heading reduction for small screens (subtracted from default h1 sizes)
 $h1-font-reduction: rem-calc(20);
 $h2-font-reduction: rem-calc(3);
-$h3-font-reduction: rem-calc(3);
+$h3-font-reduction: rem-calc(1);
 $h4-font-reduction: rem-calc(1);
 
 // Media Queries

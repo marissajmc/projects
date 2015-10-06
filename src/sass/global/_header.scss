@@ -2,63 +2,25 @@
    Header
 ------------------------------- */
 .site-header {
-	background: $primary-color url(../img/pattern_triangles_m3.gif) no-repeat center -9px;
+	background: $primary-color url(../img/pattern_triangles_m.gif) no-repeat center -9px;
 	@media #{$medium-up} {
 		background: $primary-color url(../img/pattern_triangles.gif) no-repeat center -13px;
 	}
-	// background-size: cover;
 	border-bottom: 7px solid #f65784;
 	text-align: center;
 	* {
 		color: #fff;
-		transition: all 0.5s ease;
+		transition: padding, font 0.5s ease;
 	}
 }
 
 .site-header__inner {
 	padding-top: rem-calc(43);
 	@media #{$medium-up} {
-		padding-top: rem-calc(53);
+		// padding-top: rem-calc(31);
+		// padding-top: rem-calc(43);
 	}
 	@media #{$large-up} {
 		padding-top: rem-calc(71);
-	}
-}
-
-.site-subtitle {
-	margin-top: rem-calc(8);
-	// font-family: $brand-font-family;
-	font-family: 'Tahoma';
-	letter-spacing: .02em;
-	-webkit-font-smoothing: antialiased;
-	@media #{$medium-up} {
-		margin-top: rem-calc(11);
-	}
-}
-	
-.site-navigation {
-	a {
-		display: inline-block;
-		text-decoration: none;
-		padding: rem-calc(7 7 12);
-		font-size: rem-calc(13);
-		font-family: $brand-font-family;
-		-webkit-font-smoothing: antialiased;
-		&.active,
-		&:hover {
-			text-decoration: none;
-			background: #f65784;
-		}
-	}
-	padding-top: rem-calc(35);
-	@media #{$medium-up} {
-		padding-top: rem-calc(50);
-		a {
-			font-size: rem-calc(13.5);
-			padding: rem-calc(9 9 14);
-		}
-	}
-	@media #{$large-up} {
-		padding-top: rem-calc(86);
 	}
 }
