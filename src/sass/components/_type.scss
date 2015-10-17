@@ -41,6 +41,7 @@ p {
 	margin-top: rem-calc(8);
 	letter-spacing: .02em;
 	font-size: rem-calc(13);
+
 	@media #{$medium-up} {
 		margin-top: rem-calc(11);
 		font-size: rem-calc(16);
@@ -48,6 +49,10 @@ p {
 }
 
 .callout {
+	font-size: rem-calc(17);
 	line-height: 1.35;
 	margin-bottom: rem-calc(22);
+	@media #{$medium-up} {
+		font-size: rem-calc(20);
+	}
 }

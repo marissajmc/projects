@@ -37,7 +37,7 @@
 		</div>
 	</header>
 
-	<section class="l-section l-center-align l-light-container">
+	<section class="l-section l-center-align">
 		<div class="introduction">
 			<h2 class="callout">
 				Hello I'm Marissa,<br />
@@ -51,8 +51,8 @@
 		</div>
 	</section>
 
-	<section class="l-section tools">
-		<div class="l-thin-container">
+	<section class="l-section l-light-container">
+		<div class="tools">
 			<div class="row collapse-small">
 				<div class="columns medium-6">
 					<h3 class="underlined">Daily Tools</h3>
@@ -84,7 +84,7 @@
 		</div>
 	</section>
 
-	<footer class="l-light-container site-footer">
+	<footer class="site-footer">
 		&copy; <?php echo date("Y"); ?> Marissa Cookson
 	</footer>
 

@@ -46,6 +46,7 @@ ul {
 
     @media #{$medium-up} {
         margin-top: rem-calc(25);
+        margin-bottom: rem-calc(0);
     }
 }
 

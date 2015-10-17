@@ -13,8 +13,10 @@
 	-webkit-font-smoothing: subpixel-antialiased;
 	text-decoration: none;
 	border-radius: 4px;
-	
-	&:hover {
+
+	&:hover,
+	&:active,
+	&:focus {
 		color: #fff;
 	}
 
@@ -43,25 +45,28 @@
 }
 
 .icon--calendar {
-  	@include icon($calendar);
+  	@include icon($calendar){
+  		font-size: rem-calc(13);
+  	};
 }
 
 .icon--volunteer {
-  	@include icon($group);
+  	@include icon($group){
+  		position: relative;
+  		top: 2px;
+  	};
 }
 
 .icon--email {
   	@include icon($email){
-  		font-size: rem-calc(12);
+  		font-size: rem-calc(11);
   		position: relative;
-  		top: 0;
+  		top: 3px;
   	};
 }
 
 .icon--business {
   	@include icon($briefcase){
   		font-size: rem-calc(12);
-  		position: relative;
-  		top: 0;
   	}
 }

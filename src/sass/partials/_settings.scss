@@ -11,12 +11,12 @@ $include-html-type-classes: true;
 
 // Colors
 $body-font-color: #626262;
-$primary-color: #dd295c; //0478c1
+$primary-color: #dd295c;
 $secondary-color: #f65784;
 $link-color: #00AF00;
 $anchor-font-color-hover: $primary-color;
 
-// $row-width: rem-calc(1100);
+$row-width: rem-calc(1200);
 
 // Fonts
 $brand-font-family: 'RalewayMedium', sans-serif;
@@ -25,7 +25,7 @@ $body-font-size: rem-calc(14);
 $paragraph-font-size: $body-font-size;
 
 $h1-font-size: rem-calc(48);
-$h2-font-size: rem-calc(20);
+$h2-font-size: rem-calc(23);
 $h3-font-size: rem-calc(16);
 $h4-font-size: rem-calc(15);
 

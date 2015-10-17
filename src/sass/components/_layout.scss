@@ -18,8 +18,15 @@
 	}
 }
 
+.l-thinner-section {
+	padding: rem-calc(30 14 35);
+	@media #{$medium-up} {
+		padding: rem-calc(39 0);
+	}
+}
+
 .l-light-container {
-	background: darken(#f8f8f8, 1%);
+	background: #fff;
 }
 
 .collapse-left {
@@ -51,4 +58,8 @@
 .tools {
 	max-width: rem-calc(640);
 	margin: 0 auto;
+}
+
+.contact {
+	min-height: rem-calc(300);
 }

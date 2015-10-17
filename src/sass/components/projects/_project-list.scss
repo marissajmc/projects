@@ -2,26 +2,44 @@
    Projects
 ------------------------------- */
 .project__list {
-	// display: flex;
-	// flex-wrap: wrap;
-	margin: rem-calc(16 0);
-	@media #{$medium-up} {
-		margin: 0;
-	}
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+ 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 
 	.project {
-		// display: flex;
+		display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
 		padding: 0;
 		margin-bottom: rem-calc(25);
-		position: relative;
-		@media #{$medium-up} {
-			padding-right: rem-calc(14);
-			padding-bottom: rem-calc(14);
+
+		&:last-child {
 			margin-bottom: 0;
 		}
+
+		@media #{$medium-up} {
+			margin-bottom: 0;
+			padding-bottom: rem-calc(14);
+
+			&:nth-child(odd) {
+				padding-right: rem-calc(7);
+			}
+			&:nth-child(even) {
+				padding-left: rem-calc(7);
+			}
+		}
+
 		@media #{$large-up} {
-			&.collapse-bottom {
-				padding-bottom: 0;
+			&:nth-child(odd) {
+				padding-left: rem-calc(7);
+			}
+			&:nth-child(even) {
+				padding-right: rem-calc(7);
 			}
 		}
 	}
@@ -30,81 +48,90 @@
 		width: 100%;
 		height: auto;
 		display: block;
-		margin-bottom: rem-calc(8);
+		// margin-bottom: rem-calc(8);
 	}
+
 	.project__title {
-		margin-bottom: rem-calc(7);
-		@media #{$large-up} {
-			margin-top: rem-calc(10);
+		font-size: rem-calc(15);
+		margin-top: rem-calc(10);
+		margin-bottom: rem-calc(6);
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $primary-color;
+			}
 		}
-	}
-
-	.project__date {
-		
-	}
-
-	.project__cta {
-		text-decoration: none;
-		border: 1px solid $primary-color;
-		padding: rem-calc(6 25 6 20);
-		border-radius: 6px;
-		// background: $primary-color;
-		// color: #fff;
-		width: 100%;
-		display: block;
-		position: relative;
-		@media #{$large-up} {
-			width: 50%;
-		}
-		@media #{$large-up} {
-			// width: rem-calc(118);
-		}
-		text-align: center;
-		&:hover {
-			background: #fff;
-			color: $primary-color;
-		}
-		background: $primary-color;
-		color: #fff;
-		transition: all 0.5;
-		@include icon($chevron-right, after){
-			font-size: rem-calc(13);
-			position: absolute;
-			top: 7px;
-			right: 10px;
-		};
 	}
 
 	.project__meta {
 		@include clearfix();
 		width: 100%;
-		// .icon:before {
-		// 	color: #5372d8;
-		// }
+		// color: #000;
+		color: #5372d8;
+		font-size: rem-calc(12);
+		font-family: Arial, sans-serif;
+		letter-spacing: 0.03em;
+		margin-bottom: rem-calc(10);
+
+		.icon:before {
+			color: #5372d8;
+			// color: #000;
+			margin-right: rem-calc(13);
+			// position: relative;
+			// top: 2px;
+		}
 	}
 
 	.project__category {
 		float: left;
-		padding-right: rem-calc(8);
+		padding-right: rem-calc(15);
 	}
 
 	.project__description {
 		position: relative;
 		background: #fff;
-		@media #{$medium-up} {
-			padding: rem-calc(14);
-			border: 1px dashed #bbb;
-		}
-		@media #{$large-up} {
-			height: rem-calc(380);
+		padding: rem-calc(14);
+		border: 1px dashed #bbb;
 
-			.project__cta {
-				position: absolute;
-				bottom: rem-calc(13);
-				left: rem-calc(14);
+		p {
+			font-size: rem-calc(13.5);
+			line-height: 1.5;
+			margin-bottom: rem-calc(8);
+		}
+
+		@media #{$medium-up} {
+			padding-bottom: rem-calc(55);
+			p {
+				margin-bottom: rem-calc(10);
 			}
 		}
+
 		
 	}
 
+	.project__cta {
+		width: 100%;
+		// width: rem-calc(150);
+		// padding: rem-calc(10 14);
+		// text-align: left;
+		@include icon($chevron-right, after){
+			color: #fff;
+			position: absolute;
+			top: rem-calc(10);
+			right: rem-calc(10);
+			transition: position, 0.3s ease;
+		};
+
+		&:hover {
+			&:after {
+				right: rem-calc(16);
+			}
+		}
+
+		@media #{$medium-up} {
+			width: auto;
+			position: absolute;
+			bottom: rem-calc(14);
+		}
+	}
 }
