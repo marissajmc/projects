@@ -6,7 +6,7 @@
 	@media #{$medium-up} {
 		background: $primary-color url(../img/pattern_triangles.gif) no-repeat center -13px;
 	}
-	border-bottom: 7px solid #f65784;
+	border-bottom: 7px solid $secondary-color;
 	text-align: center;
 	* {
 		color: #fff;
@@ -16,10 +16,6 @@
 
 .site-header__inner {
 	padding-top: rem-calc(43);
-	@media #{$medium-up} {
-		// padding-top: rem-calc(31);
-		// padding-top: rem-calc(43);
-	}
 	@media #{$large-up} {
 		padding-top: rem-calc(71);
 	}

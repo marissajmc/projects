@@ -12,6 +12,7 @@ $include-html-type-classes: true;
 // Colors
 $body-font-color: #626262;
 $primary-color: #dd295c; //0478c1
+$secondary-color: #f65784;
 $link-color: #00AF00;
 $anchor-font-color-hover: $primary-color;
 
@@ -19,7 +20,7 @@ $anchor-font-color-hover: $primary-color;
 
 // Fonts
 $brand-font-family: 'RalewayMedium', sans-serif;
-$body-font-family: 'Nunito', sans-serif;
+$body-font-family: 'Raleway', sans-serif;
 $body-font-size: rem-calc(14);
 $paragraph-font-size: $body-font-size;
 

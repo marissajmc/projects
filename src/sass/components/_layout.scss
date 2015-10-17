@@ -1,13 +1,6 @@
 /* -------------------------------
    Layout
 ------------------------------- */
-.collapse-small,
-.collapse-small .columns {
-	@media #{$small-only} {
-		padding: 0;
-	}
-}
-
 .l-fluid-image {
     width: 100%;
     height: auto;
@@ -18,20 +11,6 @@
     text-align: center;
 }
 
-.introduction {
-    max-width: rem-calc(616);
-    margin: 0 auto;
-    p {
-    	@media #{$medium-up} {
-			font-size: rem-calc(16);
-    	}
-    	&:last-child {
-    		margin: 0;
-    	}
-    }
-    -webkit-font-smoothing: antialiased;
-}
-
 .l-section {
 	padding: rem-calc(30 20 35);
 	@media #{$medium-up} {
@@ -40,8 +19,7 @@
 }
 
 .l-light-container {
-	background: #f8f8f8;
-	// color: lighten($body-font-color, 5%);
+	background: darken(#f8f8f8, 1%);
 }
 
 .collapse-left {
@@ -52,10 +30,22 @@
 	padding-right: 0;
 }
 
-.collapse-small {
+.collapse-small,
+.collapse-small .columns {
 	@media #{$small-only} {
 		padding: 0;
 	}
+}
+
+.introduction {
+    max-width: rem-calc(616);
+    margin: 0 auto;
+    p {
+    	@media #{$medium-up} {
+			font-size: rem-calc(15);
+    	}
+    }
+    -webkit-font-smoothing: antialiased;
 }
 
 .tools {

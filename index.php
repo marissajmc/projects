@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-    <link href='https://fonts.googleapis.com/css?family=Nunito:300,400' rel='stylesheet' type='text/css'>
 	<script src="dist/js/modernizr.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,7 +24,7 @@
 		<div class="site-header__inner">
 			<h1 class="site-title">Marissa Cookson</h1>
 			<h3 class="site-subtitle">Front-end Developer</h3>
-			<ul class="unstyled social-list">
+			<ul class="unstyled icon-list">
 				<li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
 				<li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
 				<li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
@@ -85,9 +84,9 @@
 		</div>
 	</section>
 
-	<!-- <footer class="site-footer">
-		&copy; <?php echo date("Y"); ?> Marissa Cookson &bull;
-	</footer> -->
+	<footer class="l-light-container site-footer">
+		&copy; <?php echo date("Y"); ?> Marissa Cookson
+	</footer>
 
 </body>
 </html>

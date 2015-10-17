@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6 {
     &.underlined {
 		padding-left: rem-calc(8);
 		padding-bottom: rem-calc(8);
-		border-bottom: 1px solid darken(#f2f1f0, 2%);
+		border-bottom: 1px solid darken(#f2f1f0, 4%);
 	}
 }
 
@@ -22,32 +22,32 @@ h1 {
 }
 
 h3 {
-	letter-spacing: 0.02em;
+	letter-spacing: 0.03em;
 	-webkit-font-smoothing: subpixel-antialiased;
 	color: lighten($body-font-color, 6%);
 }
 
 p {
-	line-height: 1.4;
+	letter-spacing: 0.03em;
 	margin-bottom: rem-calc(20);
-	font-weight: 300;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .site-subtitle {
 	font-weight: 300;
-	// font-family: 'Fira Sans';
+	font-family: 'FiraSans', sans-serif;
 	margin-top: rem-calc(8);
 	letter-spacing: .02em;
-	font-size: rem-calc(14);
+	font-size: rem-calc(13);
 	@media #{$medium-up} {
 		margin-top: rem-calc(11);
-		font-size: rem-calc(14.5);
+		font-size: rem-calc(16);
 	}
 }
 
 .callout {
-	font-family: $body-font-family;
-	-webkit-font-smoothing: antialiased;
 	line-height: 1.35;
 	margin-bottom: rem-calc(22);
 }
