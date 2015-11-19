@@ -44,7 +44,7 @@
 	<section class="l-section l-center-align l-light-container contact">
 		<div class="row">
 			<div class="columns">
-				<p>Want to discuss your favourite Doctor or send an enquiry? Feel free to contact me at <a href="mailto:marissjmc@gmail.com">marissajmc@gmail.com</a></p>
+				<p>Want to discuss your favourite Doctor or send an enquiry? Feel free to contact me at <a href="mailto:marissajmc@gmail.com">marissajmc@gmail.com</a></p>
 			</div>
 		</div>
 	</section>

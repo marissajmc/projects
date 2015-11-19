@@ -53,7 +53,7 @@
 								<li class="project__category icon icon--business">Small business</li>
 								<li class="project__date icon icon--calendar">January 2015</li>
 							</ul>
-							<p>Search, compare and book a Celebrant who is available based on the wedding day, time &amp; location you choose. Custom back-end portal &amp; availability calendar by <a href="http://clearsky.net.au/" target="_blank">Cody Joyce</a>.</p>
+							<p>Search, compare and book a Celebrant who is available based on the wedding day, time and location you choose. Custom back-end portal with availability calendar by <a href="http://clearsky.net.au/" target="_blank">Cody Joyce</a>.</p>
 							<a href="https://juliascelebrantagency.com/" class="button project__cta" target="_blank">Visit Site</a>
 						</div>
 					</li>
@@ -65,7 +65,7 @@
 								<li class="project__category icon icon--email">eDM</li>
 								<li class="project__date icon icon--calendar">May 2015</li>
 							</ul>
-							<p>A responsive MailChimp newsletter template for Melbourne business school <i>The Slow School of Business</i> to promote their upcoming events.</p>
+							<p>A responsive MailChimp newsletter template for <i>The Slow School of Business</i>, a people powered learning community dedicated to building businesses that make the world a better place.</p>
 							<a href="http://us5.campaign-archive2.com/?u=d66c567f37d15bd06302b2f6b&amp;id=d6dcf12a28" class="button project__cta" target="_blank">View eDM</a>
 						</div>
 					</li>
@@ -77,7 +77,7 @@
 								<li class="project__category icon icon--volunteer">Volunteer</li>
 								<li class="project__date icon icon--calendar">September 2014</li>
 							</ul>
-							<p>I volunteered via <a href="https://www.goodcompany.com.au/browse/Vacancy.aspx?VacancyId=79277" target="_blank">Goodcompany</a> to rebuild children's charity <i>The Portsea Camp's</i> website, providing a responsive design &amp; custom WordPress theme for editing content.
+							<p>I volunteered via <a href="https://www.goodcompany.com.au/browse/Vacancy.aspx?VacancyId=79277" target="_blank">Goodcompany</a> to rebuild children's charity <i>The Portsea Camp's</i> website, providing a responsive design and custom WordPress theme for editing content.
 							</p>
 							<a href="http://www.theportseacamp.com.au/" class="button project__cta" target="_blank">Visit Site</a>
 						</div>
@@ -91,7 +91,7 @@
 								<li class="project__category icon icon--business">Small business</li>
 								<li class="project__date icon icon--calendar">April 2014</li>
 							</ul>
-							<p>Website rebuild for <i>The Vision House</i>, a Melbourne cine rental company who provide tailored camera packages for film makers around Australia and NZ.</p>
+							<p>Website rebuild for <i>The Vision House</i>, a Melbourne cine rental company which provides tailored camera packages for film makers around Australia and NZ.</p>
 							<a href="http://www.thevisionhouse.com.au/" class="button project__cta" target="_blank">Visit Site</a>
 						</div>
 					</li>

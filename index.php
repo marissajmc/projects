@@ -40,7 +40,7 @@
 	<section class="l-section l-center-align">
 		<div class="introduction">
 			<h2 class="callout">
-				Hello I'm Marissa,<br />
+				Hello, I'm Marissa<br />
 				a front-end developer<br />
 				from Melbourne, Australia.
 			</h2>
@@ -58,13 +58,13 @@
 					<h3 class="underlined">Daily Tools</h3>
 					<ul class="toolkit">
 						<li>Grunt</li>
-						<li>Sublime Text</li>
+						<li>Git</li>
 						<li>Bower</li>
-						<li>GitHub</li>
-						<li>Sass</li>
 						<li>Twig</li>
-						<li>jQuery</li>
+						<li>Sass</li>
 						<li>Litmus</li>
+						<li>jQuery</li>
+						<li>Sublime Text</li>
 						<li>Foundation</li>
 						<li>BrowserStack</li>
 					</ul>
