@@ -1,0 +1,22 @@
+/* -------------------------------
+   Header
+------------------------------- */
+.site-header {
+	background: $primary-color url(../img/pattern_triangles_m.gif) no-repeat center -9px;
+	@media #{$medium-up} {
+		background: $primary-color url(../img/pattern_triangles.gif) no-repeat center -13px;
+	}
+	border-bottom: 7px solid $secondary-color;
+	text-align: center;
+	* {
+		color: #fff;
+		transition: padding, font 0.5s ease;
+	}
+}
+
+.site-header__inner {
+	padding-top: rem-calc(43);
+	@media #{$large-up} {
+		padding-top: rem-calc(71);
+	}
+}

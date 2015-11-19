@@ -1,0 +1,72 @@
+/* -------------------------------
+   UI elements
+------------------------------- */
+.button {
+	font-size: rem-calc(14);
+	text-align: center;
+	color: #fff;
+	width: auto;
+	display: inline-block;
+	background: $primary-color;
+	margin-top: rem-calc(10);
+	padding: rem-calc(10 50);
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-decoration: none;
+	border-radius: 4px;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: #fff;
+	}
+
+	@media #{$medium-up} {
+		padding: rem-calc(10 60);
+	}
+}
+
+.icon--github {
+  	@include icon($github);
+}
+
+.icon--linkedin {
+	@include icon($linkedin);
+}
+
+.icon--stackoverflow {
+  	@include icon($stackoverflow, after){
+		position: relative;
+		top: 1px;
+		font-size: rem-calc(19);
+        @media #{$medium-up} {
+            font-size: rem-calc(24);
+        }
+  	}
+}
+
+.icon--calendar {
+  	@include icon($calendar){
+  		font-size: rem-calc(13);
+  	};
+}
+
+.icon--volunteer {
+  	@include icon($group){
+  		position: relative;
+  		top: 2px;
+  	};
+}
+
+.icon--email {
+  	@include icon($email){
+  		font-size: rem-calc(11);
+  		position: relative;
+  		top: 3px;
+  	};
+}
+
+.icon--business {
+  	@include icon($briefcase){
+  		font-size: rem-calc(12);
+  	}
+}

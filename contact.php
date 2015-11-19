@@ -6,8 +6,9 @@
     <meta name="description" content="A showcase of web development projects I've designed, built and managed in my spare time">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
 	<script src="dist/js/modernizr.js"></script>
-    <script>
+	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -19,53 +20,38 @@
 </head>
 <body>
 
-	<main class="row">
+	<header class="site-header">
+		<div class="site-header__inner">
+			<h1 class="site-title">Marissa Cookson</h1>
+			<h3 class="site-subtitle">Front-end Developer</h3>
+			<ul class="unstyled icon-list">
+				<li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
+				<li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
+				<li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
+			</ul>
+			<nav class="site-navigation">
+				<a href="/">About</a>
+				<a href="/projects">Projects</a>
+				<a href="/contact" class="active">Contact</a>
+			</nav>
+		</div>
+	</header>
 
-		<aside class="columns medium-4 large-3 sidebar">
-			
-			<div class="row collapse">
-				<div class="columns small-7 medium-12">
-					<img class="sketch" width="260" src="dist/img/sketch.png" alt="sketch of Marissa by Fernanda Frick" title="Illustration by Fernanda Frick">
-				</div>
-				<div class="columns small-5 medium-12 tagline__wrapper">
-					<div class="tagline__inner">
-						<div class="tagline">
-							<h2 class="tagline__name collapse">Marissa Cookson</h2>
-							<h4 class="tagline__role">Front-end developer</h4>
-						</div>
-						<ul class="unstyled social-list">
-							<li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
-							<li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
-							<li><a href="http://stackoverflow.com/users/872018/marissajmc#" class="icon--stackoverflow" target="_blank"></a></li>
-						</ul>
-					</div>
-				</div>
+	<section class="l-section l-center-align">
+		<h2>Contact</h2>
+	</section>
+
+	<section class="l-section l-center-align l-light-container contact">
+		<div class="row">
+			<div class="columns">
+				<p>Want to discuss your favourite Doctor or send an enquiry? Feel free to contact me at <a href="mailto:marissajmc@gmail.com">marissajmc@gmail.com</a></p>
 			</div>
-		</aside>
+		</div>
+	</section>
 
-		<article class="columns medium-8 large-9 content__wrapper">
-			
-			<section class="l-bordered-container content">
+	<footer class="site-footer">
+		&copy; <?php echo date("Y"); ?> Marissa Cookson
+	</footer>
 
-				<header class="page-header">
-					<nav class="main-navigation">
-						<a href="/">About</a>
-						<a href="/projects">Projects</a>
-						<a href="/contact" class="active">Contact</a>
-					</nav>
-					<h1>Contact</h1>
-				</header>
-				
-				<p>Want to discuss your favourite Doctor or send an enquiry? Feel free to contact me at <a href="mailto:marissjmc@gmail.com">marissajmc@gmail.com</a></p>
-
-			</section>
-
-			<footer class="page-footer">
-				&copy; <?php echo date("Y"); ?> Marissa Cookson &bull;
-				Illustration by <a href="https://www.etsy.com/au/shop/IllustratedByFFrick" target="_blank">Fernanda Frick</a> 
-			</footer>
-		</article>
-	</main>
-	
 </body>
 </html>
