@@ -1,0 +1,37 @@
+{% block html_head_container %}
+
+{% include 'header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+<body data-template="base.twig">
+
+	<header class="site-header">
+		<div class="site-header__inner">
+			<h1 class="site-title">Marissa Cookson</h1>
+			<h3 class="site-subtitle">Front-end Developer</h3>
+			<ul class="unstyled icon-list">
+				<li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
+				<li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
+				<li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
+			</ul>
+			<nav class="site-navigation">
+				<a href="/" class="active">About</a>
+				<a href="/projects">Projects</a>
+				<a href="/contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	
+	{% block content %}
+	{% endblock %}
+
+	{% block footer %}
+		{% include 'footer.twig' %}
+	{% endblock %}
+	
+</body>
+</html>

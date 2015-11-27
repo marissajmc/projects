@@ -1,0 +1,42 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	{{ post.content }}
+
+	{% if is_home %}
+		<section class="l-section l-light-container">
+			<div class="tools">
+				<div class="row collapse-small">
+					<div class="columns medium-6">
+						<h3 class="underlined">Daily Tools</h3>
+						<ul class="toolkit">
+							<li>Grunt</li>
+							<li>Git</li>
+							<li>Bower</li>
+							<li>Twig</li>
+							<li>Sass</li>
+							<li>Litmus</li>
+							<li>jQuery</li>
+							<li>Sublime Text</li>
+							<li>Foundation</li>
+							<li>BrowserStack</li>
+						</ul>
+					</div>
+					<div class="columns medium-6">
+						<h3 class="underlined">Certifications</h3>
+						<ul class="unstyled certifications">
+							<li>
+								<a href="http://www.richmediagallery.com/tools/certified-users#certifiedUser:5202~" target="_blank">
+									<img class="certified__badge" src="{{site.theme.link}}/assets/dist/img/QA.png" alt="QA Certified">
+									<span class="certified__name">DoubleClick Studio<br />QA Certified</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	{% endif %}
+
+{% endblock %}
