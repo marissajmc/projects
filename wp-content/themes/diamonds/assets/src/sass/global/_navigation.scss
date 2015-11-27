@@ -2,6 +2,8 @@
    Navigation
 ------------------------------- */
 .site-navigation {
+	padding-top: rem-calc(30);
+
 	a {
 		display: inline-block;
 		text-decoration: none;
@@ -9,14 +11,14 @@
 		font-size: rem-calc(13);
 		font-family: $brand-font-family;
 		-webkit-font-smoothing: antialiased;
-		&.active,
+		
+		&.current_page_item,
 		&:hover {
 			text-decoration: none;
 			background: #f65784;
 			color: #fff;
 		}
 	}
-	padding-top: rem-calc(30);
 
 	@media #{$medium-up} {
 		padding-top: rem-calc(50);

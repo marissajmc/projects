@@ -35,19 +35,6 @@ p {
 	}
 }
 
-.site-subtitle {
-	font-weight: 300;
-	font-family: 'FiraSans', sans-serif;
-	margin-top: rem-calc(8);
-	letter-spacing: .02em;
-	font-size: rem-calc(13);
-
-	@media #{$medium-up} {
-		margin-top: rem-calc(11);
-		font-size: rem-calc(16);
-	}
-}
-
 .callout {
 	font-size: rem-calc(17);
 	line-height: 1.35;
@@ -55,4 +42,15 @@ p {
 	@media #{$medium-up} {
 		font-size: rem-calc(20);
 	}
+}
+
+.introduction {
+    max-width: rem-calc(616);
+    margin: 0 auto;
+    p {
+    	@media #{$medium-up} {
+			font-size: rem-calc(15);
+    	}
+    }
+    -webkit-font-smoothing: antialiased;
 }

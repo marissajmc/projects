@@ -1,19 +1,16 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="{{site.charset}}" />
-    <title>   
-        {% if wp_title %}
-            {{ wp_title }} - {{ site.name }}
-        {% else %}
-            {{ site.name }}
-        {% endif %}
-    </title>
-    <meta name="description" content="{{site.description}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="{{site.theme.link}}/assets/dist/css/style.css">
-    <script src="{{site.theme.link}}/assets/dist/js/modernizr.js"></script>
-    <script>
-        // GA
-    </script>
+<header class="site-header">
+    <div class="site-header__inner">
+        <h1 class="site-title">{{ site.title }}</h1>
+        <h3 class="site-subtitle">{{ site.description }}</h3>
+        <ul class="unstyled social">
+            <li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
+            <li><a href="http://www.linkedin.com/pub/marissa-cookson/35/8a9/a4" class="icon--linkedin" target="_blank"></a></li>
+            <li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
+        </ul>
+        <nav class="site-navigation">
+            {% for item in menu.get_items %}
+                <a href="{{ item.get_link }}" class="{{ item.classes|join(' ') }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>

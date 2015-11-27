@@ -2,41 +2,52 @@
 
 {% block content %}
 
-	{{ post.content }}
-
 	{% if is_home %}
+
+		{{ post.content }}
+
 		<section class="l-section l-light-container">
-			<div class="tools">
+			<div class="l-inner-container">
 				<div class="row collapse-small">
 					<div class="columns medium-6">
 						<h3 class="underlined">Daily Tools</h3>
 						<ul class="toolkit">
-							<li>Grunt</li>
-							<li>Git</li>
-							<li>Bower</li>
-							<li>Twig</li>
-							<li>Sass</li>
-							<li>Litmus</li>
-							<li>jQuery</li>
-							<li>Sublime Text</li>
-							<li>Foundation</li>
-							<li>BrowserStack</li>
+							{% for item in post.get_field('tools') %}
+								<li>{{ item.tool }}</li>
+							{% endfor %}
 						</ul>
 					</div>
 					<div class="columns medium-6">
 						<h3 class="underlined">Certifications</h3>
 						<ul class="unstyled certifications">
-							<li>
-								<a href="http://www.richmediagallery.com/tools/certified-users#certifiedUser:5202~" target="_blank">
-									<img class="certified__badge" src="{{site.theme.link}}/assets/dist/img/QA.png" alt="QA Certified">
-									<span class="certified__name">DoubleClick Studio<br />QA Certified</span>
-								</a>
-							</li>
+							{% for item in post.get_field('certifications') %}
+								<li>
+									<a href="{{ item.link }}" target="_blank">
+										<img class="certified__badge" src="{{ item.badge }}" alt="">
+										<span class="certified__name">{{ item.title }}</span>
+									</a>
+								</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
+
+	{% else %}
+
+		<section class="l-section l-center-align">
+			<h2>{{ post.title }}</h2>
+		</section>
+
+		<section class="l-section l-center-align l-light-container contact">
+			<div class="row">
+				<div class="columns">
+					{{ post.content }}
+				</div>
+			</div>
+		</section>
+
 	{% endif %}
 
 {% endblock %}

@@ -44,18 +44,7 @@
 	}
 }
 
-.introduction {
-    max-width: rem-calc(616);
-    margin: 0 auto;
-    p {
-    	@media #{$medium-up} {
-			font-size: rem-calc(15);
-    	}
-    }
-    -webkit-font-smoothing: antialiased;
-}
-
-.tools {
+.l-inner-container {
 	max-width: rem-calc(640);
 	margin: 0 auto;
 }

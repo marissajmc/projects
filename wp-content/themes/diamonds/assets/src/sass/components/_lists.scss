@@ -1,5 +1,5 @@
 /* -------------------------------
-   Layout
+   Lists
 ------------------------------- */
 
 ul {
@@ -71,16 +71,14 @@ ul {
         line-height: 1.3;
         padding-top: rem-calc(24);
         letter-spacing: 0.02em;
-        // color: darken($body-font-color, 20%);
         color: green;
     }
 }
 
-.icon-list {
+.social {
     margin-top: rem-calc(16);
     li {
         display: inline-block;
-        // margin-right: rem-calc(7);
         &:last-child {
             margin-right: 0;
         }
@@ -91,6 +89,12 @@ ul {
                 font-size: rem-calc(19);
                 @media #{$medium-up} {
                     font-size: rem-calc(23);
+                }
+
+            }
+            &:hover {
+                &:before {
+                    // color: #000
                 }
             }
         }

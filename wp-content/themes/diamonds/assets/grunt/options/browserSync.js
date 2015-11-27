@@ -5,11 +5,11 @@
         var config = {
             dev: {
                 bsFiles : {
-                    src : ["*.php", "dist/js/*.js", "dist/css/*.css", "dist/img/**", 'dist/icons/**']
+                    src : ["*.php", "../templates/*.twig", "dist/js/*.js", "dist/css/*.css", "dist/img/**", 'dist/icons/**']
                 },
                 options: {
                     watchTask: true,
-                    proxy : "mcookson.com.localhost:8888"
+                    proxy : "mcookson.com.localhost:8888/"
                 }
             }
         };
