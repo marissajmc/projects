@@ -13,16 +13,19 @@
 				<ul class="unstyled small-block-grid-1 medium-block-grid-2 large-block-grid-4 project__list">
 					{% for item in projects %}
 
-					<!-- {{ dump(item)}} -->
-
 					<li class="project">
 						<div class="project__description">
 							<a href="{{ item.link }}" target="_blank">
-								<img src="{{ item.image }}" alt="{{ item.title }} screenshot" class="project__image">
+								<img src="{{ item.get_field('screenshot') }}" alt="{{ item.title }} screenshot" class="project__image" />
 							</a>
 							<h3 class="project__title"><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h3>
 							<ul class="unstyled project__meta">
-								<li class="project__category icon icon--business">Small business</li>
+								<li class="project__category icon 
+								{% if item.terms[0].name == "Small business" %} icon--business {% endif %}
+								{% if item.terms[0].name == "eDM" %} icon--email {% endif %}
+								{% if item.terms[0].name == "Volunteer" %} icon--volunteer {% endif %}">
+									{{ item.terms[0].name }}
+								</li>
 								<li class="project__date icon icon--calendar">{{ item.launch_date }}</li>
 							</ul>
 							{{ item.description }}

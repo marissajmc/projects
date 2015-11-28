@@ -35,6 +35,6 @@ $args = array(
   'post_type' => 'project'
 );
 $data['projects'] = Timber::get_posts($args);
-$data['types'] = Timber::get_terms('project');
+$data['categories'] = Timber::get_terms('project');
 
 Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $data );
