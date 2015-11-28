@@ -9,8 +9,8 @@ function my_custom_taxonomies() {
 	$labels = array(
 		'name'              => _x( 'Project type', 'taxonomy general name' ),
 		'singular_name'     => _x( 'Project', 'taxonomy singular name' ),
-		'search_items'      => __( 'Search Projects' ),
-		'all_items'         => __( 'All Projects' ),
+		'search_items'      => __( 'Search Project types' ),
+		'all_items'         => __( 'All types' ),
 		'parent_item'       => __( 'Parent Project type' ),
 		'parent_item_colon' => __( 'Parent Project type:' ),
 		'edit_item'         => __( 'Edit Project type' ),
@@ -63,6 +63,6 @@ function my_custom_post_types() {
 }
 
 add_action( 'init', 'my_custom_post_types' );
-
+add_action( 'pre_get_posts', 'my_custom_post_types' );
 
 ?>

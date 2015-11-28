@@ -1,0 +1,40 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<section class="l-section l-center-align">
+		<h2>{{ post.title }}</h2>
+	</section>
+
+	<section class="l-section l-light-container">
+		<div class="row">
+			<div class="columns">
+
+				<ul class="unstyled small-block-grid-1 medium-block-grid-2 large-block-grid-4 project__list">
+					{% for item in projects %}
+
+					<!-- {{ dump(item)}} -->
+
+					<li class="project">
+						<div class="project__description">
+							<a href="{{ item.link }}" target="_blank">
+								<img src="{{ item.image }}" alt="{{ item.title }} screenshot" class="project__image">
+							</a>
+							<h3 class="project__title"><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h3>
+							<ul class="unstyled project__meta">
+								<li class="project__category icon icon--business">Small business</li>
+								<li class="project__date icon icon--calendar">{{ item.launch_date }}</li>
+							</ul>
+							{{ item.description }}
+							<a href="{{ item.cta_link}}" class="button project__cta" target="_blank">{{ item.cta_text }}</a>
+						</div>
+					</li>
+
+		    		{% endfor %}
+				</ul>
+
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

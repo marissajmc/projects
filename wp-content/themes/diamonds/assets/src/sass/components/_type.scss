@@ -54,3 +54,11 @@ p {
     }
     -webkit-font-smoothing: antialiased;
 }
+
+.error-code {
+	font-size: rem-calc(25);
+	position: relative;
+	@media #{$medium-up} {
+		top: -2px;
+	}
+}

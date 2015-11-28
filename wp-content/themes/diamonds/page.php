@@ -29,4 +29,12 @@ if (is_front_page()) {
 	$data['is_home'] = true;
 }
 
+// get custom post type named 'project'
+// see plugins/mcookson-plugin
+$args = array(
+  'post_type' => 'project'
+);
+$data['projects'] = Timber::get_posts($args);
+$data['types'] = Timber::get_terms('project');
+
 Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $data );
