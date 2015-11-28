@@ -79,3 +79,5 @@ static
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/themes/diamonds/
+!wp-content/plugins/mcookson-plugin/
+
