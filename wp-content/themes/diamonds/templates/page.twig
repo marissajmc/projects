@@ -1,0 +1,26 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	{% if is_home %}
+
+		{{ post.content }}
+		{% include 'components/tools-certifications.tpl.twig' %}
+
+	{% else %}
+
+		<section class="l-section l-center-align">
+			<h2>{{ post.title }}</h2>
+		</section>
+
+		<section class="l-section l-center-align l-light-container contact">
+			<div class="row">
+				<div class="columns">
+					{{ post.content }}
+				</div>
+			</div>
+		</section>
+
+	{% endif %}
+
+{% endblock %}

@@ -1,0 +1,64 @@
+/* -------------------------------
+   Typography
+------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {
+    display: block;
+    line-height: 1;
+    margin: 0;
+    font-weight: 300;
+    color: $body-font-color;
+    font-family: $brand-font-family;
+
+    &.underlined {
+		padding-left: rem-calc(8);
+		padding-bottom: rem-calc(8);
+		border-bottom: 1px solid darken(#f2f1f0, 4%);
+	}
+}
+
+h1 {
+	font-family: 'RalewayLight', sans-serif;
+}
+
+h3 {
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	color: lighten($body-font-color, 6%);
+}
+
+p {
+	letter-spacing: 0.03em;
+	margin-bottom: rem-calc(20);
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.callout {
+	font-size: rem-calc(17);
+	line-height: 1.35;
+	margin-bottom: rem-calc(22);
+	@media #{$medium-up} {
+		font-size: rem-calc(20);
+	}
+}
+
+.introduction {
+    max-width: rem-calc(616);
+    margin: 0 auto;
+    p {
+    	@media #{$medium-up} {
+			font-size: rem-calc(15);
+    	}
+    }
+    -webkit-font-smoothing: antialiased;
+}
+
+.error-code {
+	font-size: rem-calc(25);
+	position: relative;
+	@media #{$medium-up} {
+		top: -2px;
+	}
+}
