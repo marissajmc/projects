@@ -68,5 +68,7 @@
 .icon--business {
   	@include icon($briefcase){
   		font-size: rem-calc(12);
+  		position: relative;
+  		top: 2px;
   	}
 }

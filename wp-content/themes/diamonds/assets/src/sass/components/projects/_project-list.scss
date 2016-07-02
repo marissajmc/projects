@@ -14,18 +14,18 @@
 		display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
+        width: 100%;
 
-		padding: 0;
-		margin-bottom: rem-calc(25);
+        @media #{$medium-down} {
+			margin-bottom: rem-calc(25);
+			&:last-child {
+				margin-bottom: 0;
+			}
+        }
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-
+		// gutter padding
 		@media #{$medium-up} {
-			margin-bottom: 0;
-			padding-bottom: rem-calc(14);
-
+			width: 50%;
 			&:nth-child(odd) {
 				padding-right: rem-calc(7);
 			}
@@ -34,6 +34,11 @@
 			}
 		}
 
+		@media screen and (min-width: 1024px) {
+			width: 25%;
+        }
+
+		// gutter padding
 		@media #{$large-up} {
 			&:nth-child(odd) {
 				padding-left: rem-calc(7);
@@ -48,12 +53,11 @@
 		width: 100%;
 		height: auto;
 		display: block;
-		// margin-bottom: rem-calc(8);
 	}
 
 	.project__title {
 		font-size: rem-calc(15);
-		margin-top: rem-calc(10);
+		margin-top: rem-calc(13);
 		margin-bottom: rem-calc(6);
 		a {
 			text-decoration: none;
@@ -71,7 +75,7 @@
 		font-size: rem-calc(12);
 		font-family: Arial, sans-serif;
 		letter-spacing: 0.03em;
-		margin-bottom: rem-calc(10);
+		margin-bottom: rem-calc(8);
 
 		.icon:before {
 			color: #5372d8;
@@ -85,6 +89,7 @@
 	.project__category {
 		float: left;
 		padding-right: rem-calc(15);
+		padding-left: rem-calc(1);
 	}
 
 	.project__description {
@@ -92,9 +97,8 @@
 		background: #fff;
 		padding: rem-calc(14);
 		border: 1px dashed #bbb;
-		font-size: rem-calc(13.5);
 		p {
-			font-size: rem-calc(13.5);
+			font-size: rem-calc(13);
 			line-height: 1.5;
 			margin-bottom: rem-calc(8);
 		}
@@ -102,6 +106,7 @@
 		@media #{$medium-up} {
 			padding-bottom: rem-calc(55);
 			p {
+				font-size: rem-calc(13.5);
 				margin-bottom: rem-calc(10);
 			}
 		}
@@ -117,6 +122,10 @@
 		// text-align: left;
 		@include icon($chevron-right, after){
 			color: #fff;
+			// position: relative;
+			// top: rem-calc(1.5);
+			// left: rem-calc(5);
+			// font-size: rem-calc(13);
 			position: absolute;
 			top: rem-calc(10);
 			right: rem-calc(10);
@@ -130,9 +139,12 @@
 		}
 
 		@media #{$medium-up} {
+			// width: 90.2%;
 			width: auto;
 			position: absolute;
 			bottom: rem-calc(14);
+			// left: 0;
+			// margin: rem-calc(0, 10);
 		}
 	}
 }

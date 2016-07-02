@@ -7,8 +7,8 @@
 	a {
 		display: inline-block;
 		text-decoration: none;
-		padding: rem-calc(7 7 12);
-		font-size: rem-calc(13);
+		padding: rem-calc(9 11 11);
+		font-size: rem-calc(12);
 		font-family: $brand-font-family;
 		-webkit-font-smoothing: antialiased;
 		
@@ -17,6 +17,7 @@
 			text-decoration: none;
 			background: #f65784;
 			color: #fff;
+			cursor: pointer;
 		}
 	}
 
@@ -24,10 +25,10 @@
 		padding-top: rem-calc(50);
 		a {
 			font-size: rem-calc(13);
-			padding: rem-calc(9 9 13);
+			padding: rem-calc(9 14 10);
 		}
 	}
 	@media #{$large-up} {
-		padding-top: rem-calc(87);
+		padding-top: rem-calc(80);
 	}
 }
