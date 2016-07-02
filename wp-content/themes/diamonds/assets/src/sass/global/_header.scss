@@ -26,10 +26,10 @@
 	font-family: 'FiraSans', sans-serif;
 	margin-top: rem-calc(8);
 	letter-spacing: .02em;
-	font-size: rem-calc(13);
+	font-size: rem-calc(14);
 
 	@media #{$medium-up} {
 		margin-top: rem-calc(11);
-		font-size: rem-calc(16);
+		font-size: rem-calc(18);
 	}
 }

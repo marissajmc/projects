@@ -15,6 +15,10 @@ h1,h2,h3,h4,h5,h6 {
 		padding-bottom: rem-calc(8);
 		border-bottom: 1px solid darken(#f2f1f0, 4%);
 	}
+
+	&.coloured {
+		color: $primary-color;
+	}
 }
 
 h1 {
@@ -42,17 +46,6 @@ p {
 	@media #{$medium-up} {
 		font-size: rem-calc(20);
 	}
-}
-
-.introduction {
-    max-width: rem-calc(616);
-    margin: 0 auto;
-    p {
-    	@media #{$medium-up} {
-			font-size: rem-calc(15);
-    	}
-    }
-    -webkit-font-smoothing: antialiased;
 }
 
 .error-code {
