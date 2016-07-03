@@ -18,6 +18,9 @@
 
         @media #{$medium-down} {
 			margin-bottom: rem-calc(25);
+        }
+
+        @media #{$small-only} {
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -34,12 +37,9 @@
 			}
 		}
 
+		// gutter padding
 		@media screen and (min-width: 1024px) {
 			width: 25%;
-        }
-
-		// gutter padding
-		@media #{$large-up} {
 			&:nth-child(odd) {
 				padding-left: rem-calc(7);
 			}
@@ -75,7 +75,7 @@
 		font-size: rem-calc(12);
 		font-family: Arial, sans-serif;
 		letter-spacing: 0.03em;
-		margin-bottom: rem-calc(8);
+		margin-bottom: rem-calc(4);
 
 		.icon:before {
 			color: #5372d8;
@@ -97,25 +97,20 @@
 		background: #fff;
 		padding: rem-calc(14);
 		border: 1px dashed #bbb;
-		p {
-			font-size: rem-calc(13);
-			line-height: 1.5;
-			margin-bottom: rem-calc(8);
-		}
+		font-size: rem-calc(13);
+		line-height: 1.5;
 
 		@media #{$medium-up} {
-			padding-bottom: rem-calc(55);
-			p {
-				font-size: rem-calc(13.5);
-				margin-bottom: rem-calc(10);
-			}
+			padding-bottom: rem-calc(60);
 		}
-
-		
+		@media screen and (min-width: 1024px) {
+			// padding-bottom: rem-calc(45);
+		}
 	}
 
 	.project__cta {
 		width: 100%;
+		font-size: rem-calc(13);
 		position: relative;
 		// width: rem-calc(150);
 		// padding: rem-calc(10 14);
@@ -143,6 +138,7 @@
 			width: auto;
 			position: absolute;
 			bottom: rem-calc(14);
+			left: rem-calc(15);
 			// left: 0;
 			// margin: rem-calc(0, 10);
 		}
