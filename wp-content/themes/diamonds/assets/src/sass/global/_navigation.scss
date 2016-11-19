@@ -13,7 +13,8 @@
 		-webkit-font-smoothing: antialiased;
 		
 		&.current_page_item,
-		&:hover {
+		&:hover,
+		&:focus {
 			text-decoration: none;
 			background: #f65784;
 			color: #fff;

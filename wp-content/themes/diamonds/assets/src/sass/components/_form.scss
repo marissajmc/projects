@@ -1,0 +1,46 @@
+/* -------------------------------
+   Form
+------------------------------- */
+form {
+    max-width: rem-calc(460);
+    width: 100%;
+    margin: 0 auto;
+
+    label {
+        font-family: $brand-font-family;
+    }
+
+    input, textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: rem-calc(7);
+    }
+
+    input[type="submit"] {
+        @extend .button;
+        border: 0;
+    }
+
+    &.sent {
+        p {
+            display: none;
+        }
+    }
+}
+
+.required {
+    color: $primary-color;
+}
+
+.screen-reader-response {
+    display: none;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: rem-calc(12);
+    color: red;
+}
+
+.wpcf7-mail-sent-ok {
+    color: #00cc00;
+}
