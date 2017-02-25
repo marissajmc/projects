@@ -24,6 +24,7 @@
 $data = Timber::get_context();
 $post = new TimberPost();
 $data['post'] = $post;
+$data['posts'] = Timber::get_posts();
 
 if (is_front_page()) {
 	$data['is_home'] = true;

@@ -1,0 +1,32 @@
+
+.article-title {
+}
+
+.article-info {
+	margin-top: rem-calc(4);
+	font-size: rem-calc(12);
+	@media #{$medium-up} {
+		font-size: rem-calc(13);
+	}
+}
+
+.article-category {
+	a {
+		text-decoration: none;
+		background: #fff;
+		padding: rem-calc(0 5);
+		// &:hover {
+		// 	color: #fff;
+		// 	background: $primary-color;
+		// }
+	}
+}
+
+.article-date {
+	padding-right: rem-calc(10);
+}
+
+.article-body {
+	max-width: rem-calc(650);
+	margin: 0 auto;
+}

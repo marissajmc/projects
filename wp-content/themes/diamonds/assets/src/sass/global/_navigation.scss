@@ -2,7 +2,7 @@
    Navigation
 ------------------------------- */
 .site-navigation {
-	padding-top: rem-calc(30);
+	padding-top: rem-calc(25);
 
 	a {
 		display: inline-block;
@@ -13,6 +13,7 @@
 		-webkit-font-smoothing: antialiased;
 		
 		&.current_page_item,
+		&.current_page_parent,
 		&:hover,
 		&:focus {
 			text-decoration: none;
@@ -23,13 +24,13 @@
 	}
 
 	@media #{$medium-up} {
-		padding-top: rem-calc(50);
+		padding-top: rem-calc(30);
 		a {
-			font-size: rem-calc(13);
+			font-size: rem-calc(14);
 			padding: rem-calc(9 14 10);
 		}
 	}
 	@media #{$large-up} {
-		padding-top: rem-calc(80);
+		padding-top: rem-calc(60);
 	}
 }

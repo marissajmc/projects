@@ -1,11 +1,11 @@
 <header class="site-header">
     <div class="site-header__inner">
-        <h1 class="site-title">{{ site.title }}</h1>
-        <h3 class="site-subtitle">{{ site.description }}</h3>
+        <div class="site-title">{{ site.title }}</div>
+        {# <div class="site-subtitle">Digital Producer<br /> Front End Developer</div> #}
         <ul class="unstyled social">
-            <li><a href="https://github.com/marissajmc" target="_blank" class="icon--github"></a></li>
             <li><a href="https://www.linkedin.com/in/marissajmc" class="icon--linkedin" target="_blank"></a></li>
             <li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
+            <li><a href="mailto:marissajmc@gmail.com" class="icon--email"></a></li>
         </ul>
         <nav class="site-navigation">
             {% for item in menu.get_items %}

@@ -10,7 +10,7 @@ $include-html-visibility-classes: true;
 $include-html-type-classes: true;
 
 // Colors
-$body-font-color: #626262;
+$body-font-color: #555;
 $primary-color: #dd295c;
 $secondary-color: #f65784;
 $link-color: #00AF00;
@@ -20,17 +20,17 @@ $row-width: rem-calc(1200);
 
 // Fonts
 $brand-font-family: 'RalewayMedium', sans-serif;
-$body-font-family: 'Raleway', sans-serif;
-$body-font-size: rem-calc(14);
+$body-font-family: 'Open Sans', sans-serif;
+$body-font-size: rem-calc(13);
 $paragraph-font-size: $body-font-size;
 
-$h1-font-size: rem-calc(48);
-$h2-font-size: rem-calc(23);
+$h1-font-size: rem-calc(22);
+$h2-font-size: rem-calc(20);
 $h3-font-size: rem-calc(16);
 $h4-font-size: rem-calc(15);
 
 // Heading reduction for small screens (subtracted from default h1 sizes)
-$h1-font-reduction: rem-calc(20);
+$h1-font-reduction: rem-calc(3);
 $h2-font-reduction: rem-calc(3);
 $h3-font-reduction: rem-calc(1);
 $h4-font-reduction: rem-calc(1);

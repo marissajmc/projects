@@ -5,7 +5,7 @@
         var config = {
             dev: {
                 bsFiles : {
-                    src : ["*.php", "../templates/*.twig", "dist/js/*.js", "dist/css/*.css", "dist/img/**", 'dist/icons/**']
+                    src : ["*.php", "*.twig", "dist/js/*.js", "dist/css/*.css", "dist/img/**", 'dist/icons/**']
                 },
                 options: {
                     watchTask: true,
