@@ -4,10 +4,7 @@
 
 	<section class="l-section l-center-align">
 		<h1 class="article-heading coloured">{{ post.title }}</h1>
-		<p class="article-info">
-			<span class="article-date"><strong>Posted on:</strong> {{ post.post_date|date}}</span>
-			<span class="article-category"><strong>In:</strong> <a href="#">{{ post.category }}</a></span>
-		</p>
+		<p class="article-date">{{ post.post_date|date }}</p>
 	</section>
 
 	<section class="l-section l-light-container">

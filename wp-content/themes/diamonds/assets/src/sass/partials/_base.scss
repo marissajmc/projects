@@ -18,9 +18,9 @@ body {
     font-family: $body-font-family;
     font-size: $body-font-size;
     background: darken(#f8f8f8, 1%);
-    @media #{$medium-up} {
-        font-size: rem-calc(16);
-    }
+    // @media #{$medium-up} {
+    //     font-size: rem-calc(16);
+    // }
 }
 
 a {
@@ -32,4 +32,9 @@ a {
         text-decoration: none;
         // color: currentColor;
     }
+}
+
+.iubenda-ibadge {
+    position: relative;
+    top: rem-calc(6);
 }

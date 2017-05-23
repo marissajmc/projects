@@ -32,14 +32,14 @@
 
 .site-subtitle {
 	font-weight: 300;
-	// font-family: 'FiraSans', sans-serif;
+	font-family: 'FiraSans', sans-serif;
 	margin-top: rem-calc(8);
 	letter-spacing: .02em;
 	font-size: rem-calc(14);
-	line-height: 1.2;
+	line-height: 1.4;
 
 	@media #{$medium-up} {
 		margin-top: rem-calc(11);
-		// font-size: rem-calc(18);
+		font-size: rem-calc(16);
 	}
 }

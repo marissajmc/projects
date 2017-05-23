@@ -12,9 +12,9 @@
 }
 
 .l-section {
-	padding: rem-calc(30 5);
+	padding: rem-calc(30 0);
 	@media #{$medium-up} {
-		padding: rem-calc(39 0 45);
+		// padding: rem-calc(39 0 45);
 	}
 }
 

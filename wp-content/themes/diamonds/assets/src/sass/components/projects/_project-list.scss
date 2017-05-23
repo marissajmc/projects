@@ -2,51 +2,19 @@
    Projects
 ------------------------------- */
 .project__list {
-	display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
- 
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 
 	.project {
-		display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
 
         @media #{$medium-down} {
 			margin-bottom: rem-calc(25);
         }
 
         @media #{$small-only} {
+        	padding: 0;
 			&:last-child {
 				margin-bottom: 0;
 			}
         }
-
-		// gutter padding
-		@media #{$medium-up} {
-			width: 50%;
-			&:nth-child(odd) {
-				padding-right: rem-calc(7);
-			}
-			&:nth-child(even) {
-				padding-left: rem-calc(7);
-			}
-		}
-
-		// gutter padding
-		@media screen and (min-width: 1024px) {
-			width: 25%;
-			&:nth-child(odd) {
-				padding-left: rem-calc(7);
-			}
-			&:nth-child(even) {
-				padding-right: rem-calc(7);
-			}
-		}
 	}
 
 	.project__image {
@@ -80,7 +48,7 @@
 		.icon:before {
 			color: #5372d8;
 			// color: #000;
-			margin-right: rem-calc(13);
+			margin-right: rem-calc(2);
 			// position: relative;
 			// top: 2px;
 		}
@@ -98,6 +66,9 @@
 		padding: rem-calc(14);
 		border: 1px dashed #bbb;
 		font-size: rem-calc(13);
+		p {
+			font-size: rem-calc(13);
+		}
 		line-height: 1.5;
 
 		@media #{$medium-up} {
@@ -139,7 +110,7 @@
 			position: absolute;
 			bottom: rem-calc(14);
 			left: rem-calc(15);
-			// left: 0;
+			// right: rem-calc(15);
 			// margin: rem-calc(0, 10);
 		}
 	}

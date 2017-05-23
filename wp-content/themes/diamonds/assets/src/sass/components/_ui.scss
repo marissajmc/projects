@@ -37,10 +37,10 @@
   	@include icon($stackoverflow, after){
 		position: relative;
 		top: 1px;
-		font-size: rem-calc(19);
-        @media #{$medium-up} {
-            font-size: rem-calc(24);
-        }
+		font-size: rem-calc(16);
+        // @media #{$medium-up} {
+        //     font-size: rem-calc(24);
+        // }
   	}
 }
 

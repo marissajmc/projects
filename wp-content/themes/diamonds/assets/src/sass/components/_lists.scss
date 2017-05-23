@@ -7,7 +7,7 @@ ul {
     li {
         list-style-type: none;
         position: relative;
-        padding-left: rem-calc(12);
+        padding-left: rem-calc(17);
         &:before {
             content: '';
             background: $primary-color;
@@ -15,8 +15,8 @@ ul {
             height: rem-calc(5);
             border-radius: 100%;
             position: absolute;
-            top: rem-calc(8);
-            left: 0;
+            top: rem-calc(9);
+            left: 1px;
         }
     }
 }
@@ -77,32 +77,36 @@ ul {
 }
 
 .social {
-    margin-top: rem-calc(5);
+    display: inline;
+    // margin-top: rem-calc(5);
+    margin-left: rem-calc(7);
     li {
+        margin: 0;
         margin-right: rem-calc(5);
+        padding: 0;
         display: inline-block;
         &:last-child {
             margin-right: 0;
         }
         a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
             &:before {
-                font-size: rem-calc(19);
-                @media #{$medium-up} {
-                    font-size: rem-calc(23);
-                }
+                // font-size: rem-calc(14);
+                // @media #{$medium-up} {
+                //     font-size: rem-calc(23);
+                // }
             }
-            &.icon--email {
-                margin-left: rem-calc(2);
-                &:before {
-                    font-size: rem-calc(15);
-                    top: 1px;
-                    @media #{$medium-up} {
-                        font-size: rem-calc(17);
-                    }
-                }
-            }
+            // &.icon--email {
+            //     margin-left: rem-calc(2);
+            //     &:before {
+            //         font-size: rem-calc(15);
+            //         top: 1px;
+            //         @media #{$medium-up} {
+            //             font-size: rem-calc(17);
+            //         }
+            //     }
+            // }
         }
     }
     @media #{$medium-up} {

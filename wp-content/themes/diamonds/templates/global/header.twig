@@ -1,12 +1,12 @@
 <header class="site-header">
     <div class="site-header__inner">
         <div class="site-title">{{ site.title }}</div>
-        {# <div class="site-subtitle">Digital Producer<br /> Front End Developer</div> #}
-        <ul class="unstyled social">
+        <div class="site-subtitle">Digital Producer<br />Front End Developer</div>
+        {# <ul class="unstyled social">
             <li><a href="https://www.linkedin.com/in/marissajmc" class="icon--linkedin" target="_blank"></a></li>
             <li><a href="http://stackoverflow.com/users/872018/marissajmc" class="icon--stackoverflow" target="_blank"></a></li>
             <li><a href="mailto:marissajmc@gmail.com" class="icon--email"></a></li>
-        </ul>
+        </ul> #}
         <nav class="site-navigation">
             {% for item in menu.get_items %}
                 <a href="{{ item.get_link }}" class="{{ item.classes|join(' ') }}">{{ item.title }}</a>
