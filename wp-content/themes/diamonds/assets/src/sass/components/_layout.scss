@@ -12,9 +12,9 @@
 }
 
 .l-section {
-	padding: rem-calc(30 20 36);
+	padding: rem-calc(30 0);
 	@media #{$medium-up} {
-		padding: rem-calc(39 0 45);
+		// padding: rem-calc(39 0 45);
 	}
 }
 
@@ -27,6 +27,7 @@
 
 .l-light-container {
 	background: #fff;
+	min-height: rem-calc(300);
 }
 
 .l-inner-container {
@@ -47,10 +48,6 @@
 	@media #{$small-only} {
 		padding: 0;
 	}
-}
-
-.contact {
-	min-height: rem-calc(300);
 }
 
 .introduction {

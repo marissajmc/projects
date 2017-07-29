@@ -18,6 +18,8 @@ if ( ! class_exists( 'Timber' ) ) {
 	return;
 }
 $data = Timber::get_context();
+$post = new TimberPost();
+$data['post'] = $post;
 $data['posts'] = Timber::get_posts();
 $templates = array( 'index.twig' );
 Timber::render( $templates, $data );

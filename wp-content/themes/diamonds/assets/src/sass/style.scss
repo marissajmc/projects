@@ -17,15 +17,14 @@
 
 // Global
 @import "global/header";
-@import "global/navigation";
 @import "global/footer";
+@import "global/navigation";
 
 // Components
 @import "components/type";
 @import "components/lists";
 @import "components/layout";
 @import "components/form";
-// @import "components/containers";
 @import "components/ui";
+@import "components/blog";
 @import "components/projects/project-list";
-// @import "partials/components/projects/filter";

@@ -2,7 +2,7 @@
    Header
 ------------------------------- */
 .site-header {
-	background: $primary-color url(../img/pattern_triangles_m.gif) no-repeat center -9px;
+	background: $primary-color url(../img/pattern_triangles_m.gif) no-repeat center -13px;
 	@media #{$medium-up} {
 		background: $primary-color url(../img/pattern_triangles.gif) no-repeat center -13px;
 	}
@@ -15,9 +15,18 @@
 }
 
 .site-header__inner {
-	padding-top: rem-calc(43);
+	padding-top: rem-calc(25);
 	@media #{$large-up} {
-		padding-top: rem-calc(71);
+		padding-top: rem-calc(58);
+	}
+}
+
+.site-title {
+	color: #fff;
+	font-size: rem-calc(25);
+	font-family: $brand-font-family;
+	@media #{$large-up} {
+		font-size: rem-calc(32);
 	}
 }
 
@@ -27,9 +36,10 @@
 	margin-top: rem-calc(8);
 	letter-spacing: .02em;
 	font-size: rem-calc(14);
+	line-height: 1.4;
 
 	@media #{$medium-up} {
 		margin-top: rem-calc(11);
-		font-size: rem-calc(18);
+		font-size: rem-calc(16);
 	}
 }
